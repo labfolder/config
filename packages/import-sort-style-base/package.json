@@ -1,0 +1,23 @@
+{
+  "name": "@labforward/import-sort-style-base",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/labforward/config.git",
+    "directory": "packages/import-sort-style-base"
+  },
+  "license": "Apache-2.0",
+  "author": "labforward GmbH",
+  "main": "index.js",
+  "scripts": {},
+  "publishConfig": {
+    "access": "public"
+  },
+  "importSort": {
+    ".js, .jsx, .ts, .tsx": {
+      "style": "@labforward/import-sort-style-base"
+    }
+  }
+}
