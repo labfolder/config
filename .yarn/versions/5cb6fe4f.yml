@@ -1,0 +1,7 @@
+declined:
+  - "@labforward/config"
+  - "@labforward/eslint-config-base"
+  - "@labforward/eslint-config-cypress"
+  - "@labforward/eslint-config-node"
+  - "@labforward/eslint-config-react"
+  - "@labforward/import-sort-style-base"
