@@ -1,6 +1,6 @@
 {
   "name": "@labforward/config",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "private": true,
   "description": "",
   "license": "Apache-2.0",
@@ -17,8 +17,8 @@
     "yolo": "node .circleci/publish.js"
   },
   "devDependencies": {
-    "@labforward/eslint-config-node": "^0.0.1",
-    "@labforward/import-sort-style": "^0.0.1",
+    "@labforward/eslint-config-node": "^0.0.0",
+    "@labforward/import-sort-style": "^0.0.0",
     "eslint": "^7.23.0",
     "execa": "^5.0.0",
     "fs-extra": "^9.1.0",

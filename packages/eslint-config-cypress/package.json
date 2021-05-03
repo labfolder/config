@@ -1,6 +1,6 @@
 {
   "name": "@labforward/eslint-config-cypress",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "",
   "keywords": [],
   "repository": {
@@ -13,7 +13,7 @@
   "main": "./eslint/index.js",
   "scripts": {},
   "dependencies": {
-    "@labforward/eslint-config-react": "^0.0.1"
+    "@labforward/eslint-config-react": "^0.0.0"
   },
   "devDependencies": {
     "eslint-plugin-cypress": "^2.11.2",
