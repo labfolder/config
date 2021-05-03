@@ -12,7 +12,7 @@
   "author": "labforward GmbH",
   "main": "./eslint/index.js",
   "scripts": {},
-  "devDependencies": {
+  "dependencies": {
     "@babel/core": "^7.13.14",
     "@babel/eslint-parser": "^7.13.14",
     "@labforward/import-sort-style": "^0.0.0",

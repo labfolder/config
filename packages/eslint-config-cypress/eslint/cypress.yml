@@ -1,5 +1,5 @@
 extends:
-  - '@labforward/eslint-config-react'
+  - '@labforward/eslint-config-base'
   - plugin:cypress/recommended
   - plugin:mocha/recommended
 plugins:
@@ -8,5 +8,7 @@ plugins:
 rules:
   max-nested-callbacks: off
   max-statements: off
+  mocha/no-exclusive-tests: error
+  mocha/no-hooks-for-single-case: off
   mocha/no-mocha-arrows: off
-  mocha/no-exclusive-tests: 'error'
+  mocha/no-setup-in-describe: off

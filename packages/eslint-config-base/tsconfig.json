@@ -2,7 +2,8 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "allowUmdGlobalAccess": true,
-    "lib": ["es2020", "dom"],
+    "lib": ["es2020"],
+    "resolveJsonModule": true,
     "moduleResolution": "node",
     "sourceMap": true,
     "strict": true,

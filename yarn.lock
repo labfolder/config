@@ -322,7 +322,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@labforward/eslint-config-cypress@workspace:packages/eslint-config-cypress"
   dependencies:
-    "@labforward/eslint-config-react": ^0.0.0
+    "@labforward/eslint-config-base": ^0.0.0
     eslint-plugin-cypress: ^2.11.2
     eslint-plugin-mocha: ^8.1.0
   languageName: unknown
@@ -336,7 +336,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@labforward/eslint-config-react@^0.0.0, @labforward/eslint-config-react@workspace:packages/eslint-config-react":
+"@labforward/eslint-config-react@workspace:packages/eslint-config-react":
   version: 0.0.0-use.local
   resolution: "@labforward/eslint-config-react@workspace:packages/eslint-config-react"
   dependencies:

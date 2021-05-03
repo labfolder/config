@@ -1,7 +1,6 @@
 extends:
   - '@labforward/eslint-config-base'
 parserOptions:
-  ecmaVersion: 6
   sourceType: 'module'
 env:
   node: true

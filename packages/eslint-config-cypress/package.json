@@ -13,9 +13,7 @@
   "main": "./eslint/index.js",
   "scripts": {},
   "dependencies": {
-    "@labforward/eslint-config-react": "^0.0.0"
-  },
-  "devDependencies": {
+    "@labforward/eslint-config-base": "^0.0.0",
     "eslint-plugin-cypress": "^2.11.2",
     "eslint-plugin-mocha": "^8.1.0"
   },
