@@ -13,8 +13,7 @@
   "main": "./eslint/index.js",
   "scripts": {},
   "dependencies": {
-    "@labforward/eslint-config-react": "^0.0.1",
-    "@labforward/import-sort-style-base": "^0.0.1"
+    "@labforward/eslint-config-react": "^0.0.1"
   },
   "devDependencies": {
     "eslint-plugin-cypress": "^2.11.2",
@@ -25,7 +24,7 @@
   },
   "importSort": {
     ".js, .jsx, .ts, .tsx": {
-      "style": "@labforward/import-sort-style-base"
+      "style": "@labforward/import-sort-style"
     }
   }
 }

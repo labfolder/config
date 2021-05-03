@@ -290,7 +290,7 @@ __metadata:
   resolution: "@labforward/config@workspace:."
   dependencies:
     "@labforward/eslint-config-node": ^0.0.1
-    "@labforward/import-sort-style-base": ^0.0.1
+    "@labforward/import-sort-style": ^0.0.1
     eslint: ^7.23.0
     execa: ^5.0.0
     fs-extra: ^9.1.0
@@ -304,7 +304,7 @@ __metadata:
   dependencies:
     "@babel/core": ^7.13.14
     "@babel/eslint-parser": ^7.13.14
-    "@labforward/import-sort-style-base": ^0.0.1
+    "@labforward/import-sort-style": ^0.0.1
     "@typescript-eslint/eslint-plugin": ^4.20.0
     "@typescript-eslint/parser": ^4.20.0
     eslint: ^7.23.0
@@ -323,7 +323,6 @@ __metadata:
   resolution: "@labforward/eslint-config-cypress@workspace:packages/eslint-config-cypress"
   dependencies:
     "@labforward/eslint-config-react": ^0.0.1
-    "@labforward/import-sort-style-base": ^0.0.1
     eslint-plugin-cypress: ^2.11.2
     eslint-plugin-mocha: ^8.1.0
   languageName: unknown
@@ -334,7 +333,6 @@ __metadata:
   resolution: "@labforward/eslint-config-node@workspace:packages/eslint-config-node"
   dependencies:
     "@labforward/eslint-config-base": ^0.0.1
-    "@labforward/import-sort-style-base": ^0.0.1
   languageName: unknown
   linkType: soft
 
@@ -343,14 +341,13 @@ __metadata:
   resolution: "@labforward/eslint-config-react@workspace:packages/eslint-config-react"
   dependencies:
     "@labforward/eslint-config-base": ^0.0.1
-    "@labforward/import-sort-style-base": ^0.0.1
     eslint-plugin-react: ^7.23.1
   languageName: unknown
   linkType: soft
 
-"@labforward/import-sort-style-base@^0.0.1, @labforward/import-sort-style-base@workspace:packages/import-sort-style-base":
+"@labforward/import-sort-style@^0.0.1, @labforward/import-sort-style@workspace:packages/import-sort-style":
   version: 0.0.0-use.local
-  resolution: "@labforward/import-sort-style-base@workspace:packages/import-sort-style-base"
+  resolution: "@labforward/import-sort-style@workspace:packages/import-sort-style"
   languageName: unknown
   linkType: soft
 

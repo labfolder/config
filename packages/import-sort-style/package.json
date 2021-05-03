@@ -1,12 +1,12 @@
 {
-  "name": "@labforward/import-sort-style-base",
+  "name": "@labforward/import-sort-style",
   "version": "0.0.1",
   "description": "",
   "keywords": [],
   "repository": {
     "type": "git",
     "url": "https://github.com/labforward/config.git",
-    "directory": "packages/import-sort-style-base"
+    "directory": "packages/import-sort-style"
   },
   "license": "Apache-2.0",
   "author": "labforward GmbH",
@@ -17,7 +17,7 @@
   },
   "importSort": {
     ".js, .jsx, .ts, .tsx": {
-      "style": "@labforward/import-sort-style-base"
+      "style": "@labforward/import-sort-style"
     }
   }
 }

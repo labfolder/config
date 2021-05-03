@@ -13,15 +13,14 @@
   "main": "./eslint/index.js",
   "scripts": {},
   "dependencies": {
-    "@labforward/eslint-config-base": "^0.0.1",
-    "@labforward/import-sort-style-base": "^0.0.1"
+    "@labforward/eslint-config-base": "^0.0.1"
   },
   "publishConfig": {
     "access": "public"
   },
   "importSort": {
     ".js, .jsx, .ts, .tsx": {
-      "style": "@labforward/import-sort-style-base"
+      "style": "@labforward/import-sort-style"
     }
   }
 }
