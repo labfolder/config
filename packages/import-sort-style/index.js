@@ -13,9 +13,6 @@
  * limitations under the License.
  */
 
-const path = require('path');
-const fs = require('fs');
-
 const FIXED_ORDER = [
   'react',
   'react-dom',
@@ -38,21 +35,12 @@ function importSort(styleApi) {
     isAbsoluteModule,
     isNodeModule,
     isRelativeModule,
+    isInstalledModule,
     member,
     moduleName,
     naturally,
     unicode,
   } = styleApi;
-
-  const nodeModules = path.resolve(__dirname, '../../../node_modules');
-  const modules = fs.existsSync(nodeModules) ? fs.readdirSync(nodeModules) : [];
-
-  function isFromNodeModules(imported) {
-    return (
-      modules.indexOf(imported.moduleName.split('/')[0]) !== -1 && // packages coming in from 'node_modules'
-      !imported.moduleName.startsWith('react/') // components which we wrote but is under react namespace
-    );
-  }
 
   function fixedComparator(module1, module2) {
     let i1 = FIXED_ORDER.indexOf(module1);
@@ -90,7 +78,7 @@ function importSort(styleApi) {
 
     // import uniq from 'lodash/uniq'; # modules from node_modules directory
     {
-      match: isFromNodeModules,
+      match: and(isInstalledModule(__filename), isAbsoluteModule),
       sort: member(naturally),
       sortNamedMembers: alias(unicode),
     },
