@@ -11,11 +11,13 @@
   "license": "Apache-2.0",
   "author": "labforward GmbH",
   "main": "./eslint/index.js",
-  "scripts": {},
+  "scripts": {
+    "tsc": "tsc --noEmit"
+  },
   "dependencies": {
     "@babel/core": "^7.13.14",
     "@babel/eslint-parser": "^7.13.14",
-    "@labforward/import-sort-style": "^0.0.0",
+    "@labforward/config": "^0.0.0",
     "@typescript-eslint/eslint-plugin": "^4.20.0",
     "@typescript-eslint/parser": "^4.20.0",
     "eslint": "^7.23.0",
@@ -32,7 +34,7 @@
   },
   "importSort": {
     ".js, .jsx, .ts, .tsx": {
-      "style": "@labforward/import-sort-style"
+      "style": "@labforward/config/import-sort"
     }
   }
 }

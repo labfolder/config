@@ -285,16 +285,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@labforward/config@workspace:.":
+"@labforward/config@^0.0.0, @labforward/config@workspace:packages/config":
   version: 0.0.0-use.local
-  resolution: "@labforward/config@workspace:."
-  dependencies:
-    "@labforward/eslint-config-node": ^0.0.0
-    "@labforward/import-sort-style": ^0.0.0
-    eslint: ^7.23.0
-    execa: ^5.0.0
-    fs-extra: ^9.1.0
-    sort-package-json: ^1.49.0
+  resolution: "@labforward/config@workspace:packages/config"
   languageName: unknown
   linkType: soft
 
@@ -304,7 +297,7 @@ __metadata:
   dependencies:
     "@babel/core": ^7.13.14
     "@babel/eslint-parser": ^7.13.14
-    "@labforward/import-sort-style": ^0.0.0
+    "@labforward/config": ^0.0.0
     "@typescript-eslint/eslint-plugin": ^4.20.0
     "@typescript-eslint/parser": ^4.20.0
     eslint: ^7.23.0
@@ -345,9 +338,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@labforward/import-sort-style@^0.0.0, @labforward/import-sort-style@workspace:packages/import-sort-style":
+"@labforward/workspace@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@labforward/import-sort-style@workspace:packages/import-sort-style"
+  resolution: "@labforward/workspace@workspace:."
+  dependencies:
+    "@labforward/config": ^0.0.0
+    "@labforward/eslint-config-node": ^0.0.0
+    eslint: ^7.23.0
+    execa: ^5.0.0
+    fs-extra: ^9.1.0
+    sort-package-json: ^1.49.0
   languageName: unknown
   linkType: soft
 

@@ -21,7 +21,7 @@
   },
   "importSort": {
     ".js, .jsx, .ts, .tsx": {
-      "style": "@labforward/import-sort-style"
+      "style": "@labforward/config/import-sort"
     }
   }
 }
