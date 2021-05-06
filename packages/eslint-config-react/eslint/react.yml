@@ -1,0 +1,25 @@
+extends:
+  - '@labforward/eslint-config-base'
+  - 'plugin:react/recommended'
+plugins:
+  - react
+parserOptions:
+  sourceTypes: module
+  ecmaFeatures:
+    jsx: true
+    modules: true
+settings:
+  react:
+    version: detect
+env:
+  browser: true
+  jquery: true
+  es6: true
+globals:
+  process: true
+overrides:
+  - files:
+      - '**/*.ts'
+      - '**/*.tsx'
+    rules:
+      react/prop-types: off

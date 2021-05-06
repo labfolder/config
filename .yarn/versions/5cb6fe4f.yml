@@ -1,0 +1,7 @@
+releases:
+  '@labforward/workspace': patch
+  '@labforward/config': patch
+  '@labforward/eslint-config-base': patch
+  '@labforward/eslint-config-cypress': patch
+  '@labforward/eslint-config-node': patch
+  '@labforward/eslint-config-react': patch

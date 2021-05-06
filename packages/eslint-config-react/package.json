@@ -1,0 +1,27 @@
+{
+  "name": "@labforward/eslint-config-react",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/labforward/config.git",
+    "directory": "packages/eslint-config-react"
+  },
+  "license": "Apache-2.0",
+  "author": "labforward GmbH",
+  "main": "./eslint/index.js",
+  "scripts": {},
+  "dependencies": {
+    "@labforward/eslint-config-base": "^0.0.0",
+    "eslint-plugin-react": "^7.23.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "importSort": {
+    ".js, .jsx, .ts, .tsx": {
+      "style": "@labforward/config/import-sort"
+    }
+  }
+}

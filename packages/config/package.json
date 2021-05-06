@@ -1,0 +1,33 @@
+{
+  "name": "@labforward/config",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/labforward/config.git",
+    "directory": "packages/config"
+  },
+  "license": "Apache-2.0",
+  "author": "labforward GmbH",
+  "exports": {
+    "./prettier": "./.prettierrc.js",
+    "./import-sort": "./import-sort.js"
+  },
+  "scripts": {
+    "tsc": "tsc --noEmit"
+  },
+  "dependencies": {
+    "prettier": "^2.2.1",
+    "prettier-plugin-import-sort": "^0.0.6",
+    "typescript": "^4.2.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "importSort": {
+    ".js, .jsx, .ts, .tsx": {
+      "style": "@labforward/config/import-sort"
+    }
+  }
+}

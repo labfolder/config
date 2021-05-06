@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/)
 
 ### Added
 
+- [[#CUB-3561]](https://labforward.atlassian.net/browse/CUB-3561) New package @labforward/config
+- [[#CUB-3561]](https://labforward.atlassian.net/browse/CUB-3561) New package @labforward/eslint-config-base
+- [[#CUB-3561]](https://labforward.atlassian.net/browse/CUB-3561) New package @labforward/eslint-config-cypress
+- [[#CUB-3561]](https://labforward.atlassian.net/browse/CUB-3561) New package @labforward/eslint-config-node
+- [[#CUB-3561]](https://labforward.atlassian.net/browse/CUB-3561) New package @labforward/eslint-config-react
+
 ### Changed
 
 ### Deprecated
