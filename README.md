@@ -41,4 +41,4 @@ To publish all packages run `yarn yolo`
 
 Confirm that the packages were published by visiting: `http://localhost:4873`
 
-To unpublish packages run `yarn workspaces foreach exec npm unpublish --force`<
+To unpublish packages run `yarn workspaces foreach exec npm unpublish --force`
