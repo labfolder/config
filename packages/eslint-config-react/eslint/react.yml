@@ -1,7 +1,6 @@
 extends:
   - '@labforward/eslint-config-base'
   - 'plugin:react/recommended'
-  - 'prettier/react'
 plugins:
   - react
 parserOptions:
