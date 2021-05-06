@@ -9,6 +9,18 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/)
 
 ### Added
 
+### Changed
+
+### Deprecated
+
+### Fixed
+
+### Removed
+
+## [v0.0.1](https://github.com/labforward/config/releases/tag/v0.0.1) - 2021-05-06
+
+### Added
+
 - [[#CUB-3561]](https://labforward.atlassian.net/browse/CUB-3561) New package @labforward/config
 - [[#CUB-3561]](https://labforward.atlassian.net/browse/CUB-3561) New package @labforward/eslint-config-base
 - [[#CUB-3561]](https://labforward.atlassian.net/browse/CUB-3561) New package @labforward/eslint-config-cypress
