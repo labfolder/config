@@ -11,9 +11,7 @@
   "license": "Apache-2.0",
   "author": "labforward GmbH",
   "main": "./eslint/index.js",
-  "scripts": {
-    "tsc": "tsc --noEmit"
-  },
+  "scripts": {},
   "dependencies": {
     "@babel/core": "^7.13.14",
     "@babel/eslint-parser": "^7.13.14",
@@ -24,10 +22,7 @@
     "eslint-config-prettier": "^8.1.0",
     "eslint-import-resolver-typescript": "^2.4.0",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-prettier": "^3.3.1",
-    "prettier": "^2.2.1",
-    "prettier-plugin-import-sort": "^0.0.6",
-    "typescript": "^4.2.3"
+    "eslint-plugin-prettier": "^3.3.1"
   },
   "publishConfig": {
     "access": "public"

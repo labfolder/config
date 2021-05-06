@@ -1,4 +1,0 @@
-{
-  "extends": "@labforward/config/tsconfig",
-  "include": ["test/**/*"]
-}

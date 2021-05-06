@@ -14,7 +14,14 @@
     "./prettier": "./.prettierrc.js",
     "./import-sort": "./import-sort.js"
   },
-  "scripts": {},
+  "scripts": {
+    "tsc": "tsc --noEmit"
+  },
+  "dependencies": {
+    "prettier": "^2.2.1",
+    "prettier-plugin-import-sort": "^0.0.6",
+    "typescript": "^4.2.3"
+  },
   "publishConfig": {
     "access": "public"
   },
