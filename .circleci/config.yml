@@ -14,6 +14,9 @@ aliases:
           - main
           - master
           - develop
+  is_release: &is_release
+    condition:
+      matches: { pattern: /^release\/.*$/ , value: << pipeline.git.branch >> }
   node_env: &node_env
     docker:
       - image: circleci/node:12
@@ -57,7 +60,19 @@ jobs:
       - checkout
       - auth_login
       - yarn_cache_install
-      - run: yarn version check
+      - when:
+          <<: *is_release
+          steps:
+            - run:
+                name: Confirm release strategy was applied
+                command: |
+                  if [ -n "$(ls -A ~/repo/.yarn/versions)" ]; then
+                    exit 1
+                  fi
+      - unless:
+          <<: *is_release
+          steps:
+            - run: yarn version check
   lint:
     <<: *node_env
     steps:
