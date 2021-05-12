@@ -1,0 +1,104 @@
+/* Copyright 2020 Labforward GmbH
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+const FIXED_ORDER = [
+  'react',
+  'react-dom',
+  'react-redux',
+  'redux',
+  'prop-types',
+];
+
+function isFixed(imported) {
+  return FIXED_ORDER.indexOf(imported.moduleName) !== -1;
+}
+
+exports.default = importSort;
+function importSort(styleApi) {
+  const {
+    alias,
+    and,
+    dotSegmentCount,
+    hasNoMember,
+    isAbsoluteModule,
+    isNodeModule,
+    isRelativeModule,
+    isInstalledModule,
+    member,
+    moduleName,
+    naturally,
+    unicode,
+  } = styleApi;
+
+  function fixedComparator(module1, module2) {
+    let i1 = FIXED_ORDER.indexOf(module1);
+    let i2 = FIXED_ORDER.indexOf(module2);
+
+    i1 = i1 === -1 ? Number.MAX_SAFE_INTEGER : i1;
+    i2 = i2 === -1 ? Number.MAX_SAFE_INTEGER : i2;
+
+    return i1 === i2 ? naturally(module1, module2) : i1 - i2;
+  }
+
+  return [
+    // import "foo"
+    { match: and(hasNoMember, isAbsoluteModule) },
+    { separator: true },
+
+    // import "./foo"
+    { match: and(hasNoMember, isRelativeModule) },
+    { separator: true },
+
+    // import … from "fs"; # native node modules
+    {
+      match: isNodeModule,
+      sort: member(naturally),
+      sortNamedMembers: alias(unicode),
+    },
+    { separator: true },
+
+    // module which have fixed position (see FIXED_ORDER)
+    {
+      match: isFixed,
+      sort: moduleName(fixedComparator),
+      sortNamedMembers: alias(unicode),
+    },
+
+    // import uniq from 'lodash/uniq'; # modules from node_modules directory
+    {
+      match: and(isInstalledModule(__filename), isAbsoluteModule),
+      sort: member(naturally),
+      sortNamedMembers: alias(unicode),
+    },
+    { separator: true },
+
+    // import … from "foo"; # modules with absolute path
+    {
+      match: isAbsoluteModule,
+      sort: member(naturally),
+      sortNamedMembers: alias(unicode),
+    },
+    { separator: true },
+
+    // import … from "./foo"; # modules with relative path
+    // import … from "../foo";
+    {
+      match: isRelativeModule,
+      sort: [dotSegmentCount, member(naturally)],
+      sortNamedMembers: alias(unicode),
+    },
+    { separator: true },
+  ];
+}

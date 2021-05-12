@@ -1,0 +1,110 @@
+version: 2.1
+
+aliases:
+  only_main: &only_main
+    filters:
+      branches:
+        only:
+          - main
+          - master
+  not_develop_nor_main: &not_develop_nor_main
+    filters:
+      branches:
+        ignore:
+          - main
+          - master
+          - develop
+  is_release: &is_release
+    condition:
+      matches: { pattern: /^release\/.*$/ , value: << pipeline.git.branch >> }
+  node_env: &node_env
+    docker:
+      - image: circleci/node:12
+    working_directory: ~/repo
+    environment:
+      GIT_SSH_COMMAND: 'ssh -o IdentitiesOnly=yes -i ~/.ssh/id_rsa_ci'
+
+commands:
+  auth_login:
+    steps:
+      - run:
+          name: Authenticate NPM and SSH
+          command: |
+            echo "${GIT_PRIVATE_KEY}" | base64 -d > ~/.ssh/id_rsa_ci
+            chmod 600 ~/.ssh/id_rsa_ci
+            npm set "@labforward:registry" "https://registry.npmjs.org/"
+            npm set "//registry.npmjs.org/:_authToken" "${NPM_TOKEN_WRITE}"
+  yarn_cache_install:
+    steps:
+      - restore_cache:
+          key: packages-{{ checksum "yarn.lock" }}-{{ checksum "package.json" }}
+      - run: yarn install --immutable
+      - save_cache:
+          paths:
+            - ~/repo/.yarn/cache
+          key: packages-{{ checksum "yarn.lock" }}-{{ checksum "package.json" }}
+  install_gh:
+    steps:
+      - run:
+          name: Install GitHub CLI
+          command: |
+            curl -L -o ~/cli.deb $(curl -s https://api.github.com/repos/cli/cli/releases/latest | grep -o "http.*linux_amd64.deb")
+            sudo apt install ~/cli.deb
+            echo ${GITHUB_ACCESS_TOKEN} | gh auth login --with-token
+            gh auth status
+
+jobs:
+  check:
+    <<: *node_env
+    steps:
+      - checkout
+      - auth_login
+      - yarn_cache_install
+      - when:
+          <<: *is_release
+          steps:
+            - run:
+                name: Confirm release strategy was applied
+                command: |
+                  if [ -n "$(ls -A ~/repo/.yarn/versions)" ]; then
+                    exit 1
+                  fi
+      - unless:
+          <<: *is_release
+          steps:
+            - run: yarn version check
+  lint:
+    <<: *node_env
+    steps:
+      - checkout
+      - auth_login
+      - yarn_cache_install
+      - run: yarn lint
+  release:
+    <<: *node_env
+    steps:
+      - checkout
+      - install_gh
+      - auth_login
+      - yarn_cache_install
+      - run: yarn yolo
+      - run:
+          name: Publish GitHub release
+          command: |
+            VERSION=v$(jq -r '.version' package.json)
+            gh release create $VERSION --title "$VERSION" --target $CIRCLE_SHA1 --notes ""
+
+workflows:
+  tests:
+    jobs:
+      - check:
+          <<: *not_develop_nor_main
+          context: laboperator-drivers
+      - lint:
+          <<: *not_develop_nor_main
+          context: laboperator-drivers
+  release:
+    jobs:
+      - release:
+          <<: *only_main
+          context: laboperator-drivers
