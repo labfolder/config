@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/)
 
 ### Added
 
+- [[#CUB-3619]](https://labforward.atlassian.net/browse/CUB-3619) New package @labforward/eslint-config-drivers
+
 ### Changed
 
 ### Deprecated
