@@ -1,0 +1,17 @@
+{
+  "extends": "@labforward/config/tsconfig",
+  "compilerOptions": {
+    "target": "es2018", // ES2018 is required for Node 12 support.
+    "lib": ["es2018"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "removeComments": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  // These paths are relative to this config file.
+  "include": ["test/**/*"],
+  "exclude": ["eslint/**/*"]
+}

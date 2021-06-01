@@ -17,6 +17,20 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/)
 
 ### Removed
 
+## [v0.0.2](https://github.com/labforward/config/releases/tag/v0.0.2) - 2021-06-01
+
+### Added
+
+- [[#CUB-3619]](https://labforward.atlassian.net/browse/CUB-3619) New package @labforward/eslint-config-drivers
+
+### Changed
+
+### Deprecated
+
+### Fixed
+
+### Removed
+
 ## [v0.0.1](https://github.com/labforward/config/releases/tag/v0.0.1) - 2021-05-06
 
 ### Added
