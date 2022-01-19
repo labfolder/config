@@ -40,7 +40,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/)
 - [[#CUB-3561]](https://labforward.atlassian.net/browse/CUB-3561) New package @labforward/eslint-config-cypress
 - [[#CUB-3561]](https://labforward.atlassian.net/browse/CUB-3561) New package @labforward/eslint-config-node
 - [[#CUB-3561]](https://labforward.atlassian.net/browse/CUB-3561) New package @labforward/eslint-config-react
-- [[#WFE-18]](https://labforward.atlassian.net/browse/WFE-18) Upgrade @typescript-eslint/eslint-plugin and @typescript-eslint/parser versions
+- [[#WFE-18]](https://labforward.atlassian.net/browse/WFE-18) Upgrade outdated packages
 
 ### Changed
 
