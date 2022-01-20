@@ -331,7 +331,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@labforward/eslint-config-node@^0.0.1, @labforward/eslint-config-node@workspace:packages/eslint-config-node":
+"@labforward/eslint-config-node@workspace:packages/eslint-config-node":
   version: 0.0.0-use.local
   resolution: "@labforward/eslint-config-node@workspace:packages/eslint-config-node"
   dependencies:
@@ -353,12 +353,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@labforward/workspace@workspace:."
   dependencies:
-    "@labforward/config": ^0.0.1
-    "@labforward/eslint-config-node": ^0.0.1
+    "@labforward/config": "workspace:packages/config"
+    "@labforward/eslint-config-node": "workspace:packages/eslint-config-node"
     eslint: ^8.7.0
     execa: ^6.0.0
     fs-extra: ^10.0.0
-    sort-package-json: ^1.49.0
+    sort-package-json: ^1.53.1
   languageName: unknown
   linkType: soft
 
@@ -2700,7 +2700,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"sort-package-json@npm:^1.49.0":
+"sort-package-json@npm:^1.53.1":
   version: 1.53.1
   resolution: "sort-package-json@npm:1.53.1"
   dependencies:
