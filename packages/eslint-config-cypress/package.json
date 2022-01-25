@@ -1,6 +1,6 @@
 {
   "name": "@labforward/eslint-config-cypress",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "keywords": [],
   "repository": {
@@ -13,7 +13,7 @@
   "main": "./eslint/index.js",
   "scripts": {},
   "dependencies": {
-    "@labforward/eslint-config-base": "^0.0.1",
+    "@labforward/eslint-config-base": "^0.0.2",
     "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-mocha": "^10.0.3"
   },
@@ -21,7 +21,7 @@
     "access": "public"
   },
   "importSort": {
-    ".js, .jsx, .ts, .tsx": {
+    ".js, .jsx, .mjs, .ts, .tsx": {
       "style": "@labforward/config/import-sort"
     }
   }

@@ -1,10 +1,10 @@
 /* eslint-disable no-console */
-const path = require('path');
+import path from 'path';
 
-const fse = require('fs-extra');
-const execa = require('execa');
+import { execa } from 'execa';
+import fse from 'fs-extra';
 
-const packagesDir = path.join(__dirname, '../packages');
+const packagesDir = path.resolve('./packages');
 
 const publishSafe = async (packageDir) => {
   const { name, version } = await fse.readJson(

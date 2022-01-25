@@ -26,7 +26,7 @@ On your `package.json` add the following property:
 
 ```json
 "importSort": {
-  ".js, .jsx, .ts, .tsx": {
+  ".js, .jsx, .mjs, .ts, .tsx": {
     "style": "@labforward/config/import-sort"
   }
 }
@@ -81,7 +81,7 @@ On your `package.json` add the following property:
 
 ```json
 "importSort": {
-  ".js, .jsx, .ts, .tsx": {
+  ".js, .jsx, .mjs, .ts, .tsx": {
     "style": "@labforward/config/import-sort"
   }
 }

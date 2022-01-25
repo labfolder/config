@@ -1,6 +1,6 @@
 {
   "name": "@labforward/eslint-config-drivers",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "keywords": [],
   "repository": {
@@ -13,7 +13,7 @@
   "main": "./eslint/index.js",
   "scripts": {},
   "dependencies": {
-    "@labforward/eslint-config-base": "^0.0.1",
+    "@labforward/eslint-config-base": "^0.0.2",
     "eslint-plugin-jasmine": "^4.1.3",
     "eslint-plugin-jest": "^25.7.0"
   },
@@ -21,7 +21,7 @@
     "access": "public"
   },
   "importSort": {
-    ".js, .jsx, .ts, .tsx": {
+    ".js, .jsx, .mjs, .ts, .tsx": {
       "style": "@labforward/config/import-sort"
     }
   }
