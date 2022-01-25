@@ -1,6 +1,6 @@
 {
   "name": "@labforward/workspace",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": true,
   "description": "",
   "license": "Apache-2.0",
@@ -14,21 +14,21 @@
     "lint": "eslint . .circleci",
     "lint:fix": "eslint . .circleci --fix",
     "sort": "sort-package-json ./package.json packages/*/package.json",
-    "yolo": "node .circleci/publish.js"
+    "yolo": "node .circleci/publish.mjs"
   },
   "devDependencies": {
-    "@labforward/config": "^0.0.1",
-    "@labforward/eslint-config-node": "^0.0.1",
-    "eslint": "^7.23.0",
-    "execa": "^5.0.0",
-    "fs-extra": "^9.1.0",
-    "sort-package-json": "^1.49.0"
+    "@labforward/config": "workspace:packages/config",
+    "@labforward/eslint-config-node": "workspace:packages/eslint-config-node",
+    "eslint": "^8.7.0",
+    "execa": "^6.0.0",
+    "fs-extra": "^10.0.0",
+    "sort-package-json": "^1.53.1"
   },
   "engines": {
     "node": ">=12.11.0"
   },
   "importSort": {
-    ".js, .jsx, .ts, .tsx": {
+    ".js, .jsx, .mjs, .ts, .tsx": {
       "style": "@labforward/config/import-sort"
     }
   }

@@ -1,6 +1,8 @@
 extends:
   - '@labforward/eslint-config-base'
   - 'plugin:react/recommended'
+  - 'plugin:react/jsx-runtime'
+  - 'plugin:react-hooks/recommended'
 plugins:
   - react
 parserOptions:
