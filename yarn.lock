@@ -283,7 +283,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@labforward/config@^0.0.1, @labforward/config@workspace:packages/config":
+"@labforward/config@^0.0.2, @labforward/config@workspace:packages/config":
   version: 0.0.0-use.local
   resolution: "@labforward/config@workspace:packages/config"
   dependencies:
@@ -293,13 +293,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@labforward/eslint-config-base@^0.0.1, @labforward/eslint-config-base@workspace:packages/eslint-config-base":
+"@labforward/eslint-config-base@^0.0.2, @labforward/eslint-config-base@workspace:packages/eslint-config-base":
   version: 0.0.0-use.local
   resolution: "@labforward/eslint-config-base@workspace:packages/eslint-config-base"
   dependencies:
     "@babel/core": ^7.16.10
     "@babel/eslint-parser": ^7.16.5
-    "@labforward/config": ^0.0.1
+    "@labforward/config": ^0.0.2
     "@typescript-eslint/eslint-plugin": ^5.10.0
     "@typescript-eslint/parser": ^5.10.0
     eslint: ^8.7.0
@@ -315,7 +315,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@labforward/eslint-config-cypress@workspace:packages/eslint-config-cypress"
   dependencies:
-    "@labforward/eslint-config-base": ^0.0.1
+    "@labforward/eslint-config-base": ^0.0.2
     eslint-plugin-cypress: ^2.12.1
     eslint-plugin-mocha: ^10.0.3
   languageName: unknown
@@ -325,7 +325,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@labforward/eslint-config-drivers@workspace:packages/eslint-config-drivers"
   dependencies:
-    "@labforward/eslint-config-base": ^0.0.1
+    "@labforward/eslint-config-base": ^0.0.2
     eslint-plugin-jasmine: ^4.1.3
     eslint-plugin-jest: ^25.7.0
   languageName: unknown
@@ -335,7 +335,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@labforward/eslint-config-node@workspace:packages/eslint-config-node"
   dependencies:
-    "@labforward/eslint-config-base": ^0.0.1
+    "@labforward/eslint-config-base": ^0.0.2
   languageName: unknown
   linkType: soft
 
@@ -343,7 +343,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@labforward/eslint-config-react@workspace:packages/eslint-config-react"
   dependencies:
-    "@labforward/eslint-config-base": ^0.0.1
+    "@labforward/eslint-config-base": ^0.0.2
     eslint-plugin-react: ^7.28.0
     eslint-plugin-react-hooks: ^4.3.0
   languageName: unknown
