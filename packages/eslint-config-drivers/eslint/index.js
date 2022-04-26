@@ -11,11 +11,18 @@ module.exports = {
     es2017: true,
   },
   rules: {
-    // Changed from error to warn since most drivers had too many errors.
-    camelcase: 'warn',
+    camelcase: [
+      'warn',
+      {
+        properties: 'never',
+      },
+    ],
     'class-methods-use-this': 'warn',
     'no-console': 'warn',
-    'no-underscore-dangle': 'warn',
+    'no-underscore-dangle': [
+      'warn',
+      { allow: ['_updateCycle'], allowAfterThis: true },
+    ],
   },
   overrides: [
     {
@@ -38,6 +45,7 @@ module.exports = {
       rules: {
         'max-statements': 'off',
         'max-nested-callbacks': 'off',
+        'jasmine/no-spec-dupes': ['warn', 'branch'],
       },
     },
     {

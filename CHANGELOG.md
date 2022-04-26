@@ -17,6 +17,20 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/)
 
 ### Removed
 
+## [v0.0.4](https://github.com/labforward/config/releases/tag/v0.0.4) - 2022-04-26
+
+### Added
+
+### Changed
+
+- [[#LSC-4]](https://labforward.atlassian.net/browse/LSC-4) Update `camelcase`, `no-underscore-dangle`, `no-spec-dupes` eslint rules for drivers
+
+### Deprecated
+
+### Fixed
+
+### Removed
+
 ## [v0.0.2](https://github.com/labforward/config/releases/tag/v0.0.2) - 2021-06-01
 
 ### Added
