@@ -1,5 +1,5 @@
 {
-  "extends": "@labforward/config/tsconfig",
+  "extends": "@labforward/config/tsconfig.json",
   "compilerOptions": {
     "target": "es2018", // ES2018 is required for Node 12 support.
     "lib": ["es2018"],
