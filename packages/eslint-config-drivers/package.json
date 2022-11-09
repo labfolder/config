@@ -1,6 +1,6 @@
 {
   "name": "@labforward/eslint-config-drivers",
-  "version": "0.0.4",
+  "version": "0.0.27",
   "description": "",
   "keywords": [],
   "repository": {
@@ -15,7 +15,8 @@
   "dependencies": {
     "@labforward/eslint-config-base": "^0.0.2",
     "eslint-plugin-jasmine": "^4.1.3",
-    "eslint-plugin-jest": "^25.7.0"
+    "eslint-plugin-jest": "^26.9.0",
+    "lodash": "^4.17.21"
   },
   "publishConfig": {
     "access": "public"
