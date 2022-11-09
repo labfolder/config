@@ -9,7 +9,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/)
 
 ### Added
 
+- [[#LSC-5]](https://labforward.atlassian.net/browse/LSC-5) New configs for TS drivers
+
 ### Changed
+
+- [[#LSC-5]](https://labforward.atlassian.net/browse/LSC-5) Update `import/no-extraneous-dependencies` eslint rules
 
 ### Deprecated
 
