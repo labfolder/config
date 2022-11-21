@@ -1,6 +1,6 @@
 {
   "name": "@labforward/config",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "keywords": [],
   "repository": {
@@ -12,7 +12,8 @@
   "author": "labforward GmbH",
   "exports": {
     "./prettier": "./.prettierrc.js",
-    "./import-sort": "./import-sort.js"
+    "./import-sort": "./import-sort.js",
+    "./drivers/*": "./drivers/*.js"
   },
   "scripts": {
     "tsc": "tsc --noEmit"

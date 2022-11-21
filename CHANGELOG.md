@@ -17,6 +17,22 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/)
 
 ### Removed
 
+## [v0.0.5](https://github.com/labforward/config/releases/tag/v0.0.5) - 2022-11-21
+
+### Added
+
+- [[#LSC-5]](https://labforward.atlassian.net/browse/LSC-5) New configs for TS drivers
+
+### Changed
+
+- [[#LSC-5]](https://labforward.atlassian.net/browse/LSC-5) Update `import/no-extraneous-dependencies` eslint rules
+
+### Deprecated
+
+### Fixed
+
+### Removed
+
 ## [v0.0.4](https://github.com/labforward/config/releases/tag/v0.0.4) - 2022-04-26
 
 ### Added

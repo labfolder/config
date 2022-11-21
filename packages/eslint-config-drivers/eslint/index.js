@@ -23,6 +23,7 @@ module.exports = {
       'warn',
       { allow: ['_updateCycle'], allowAfterThis: true },
     ],
+    'import/no-extraneous-dependencies': 'warn',
   },
   overrides: [
     {
