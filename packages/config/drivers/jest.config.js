@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const { chain } = require('lodash');
+const esModules = new Set();
 
 // Some of the driver dependencies in GitHub are ES Modules that do not need transpilation.
 // This function finds all of these dependencies.
@@ -10,26 +10,17 @@ const findEsModules = (packageJsonFile) => {
     fs.readFileSync(packageJsonFile, 'utf-8')
   );
 
-  return chain(dependencies)
-    .toPairs()
-    .reduce(
-      (arr, [name, version]) =>
-        version.includes('github.com/labforward')
-          ? arr.concat([
-              name,
-              // Find more dependencies recursively.
-              ...findEsModules(require.resolve(`${name}/package.json`)),
-            ])
-          : arr,
-      []
-    )
-    .flattenDeep() // Every nested dependency is an extra dimension. Flatten it completely.
-    .uniq() // No duplicate dependencies in the list.
-    .value();
+  Object.entries(dependencies)
+    .filter(([_, version]) => version.includes('github.com/labforward'))
+    .forEach(([name]) => {
+      // Dependency has been filtered to be an internal one.
+      esModules.add(name);
+
+      findEsModules(require.resolve(path.join(name, 'package.json')));
+    });
 };
 
-const packageJsonFile = path.join(process.cwd(), 'package.json');
-const esModules = findEsModules(packageJsonFile).join('|');
+findEsModules(path.join(process.cwd(), 'package.json'));
 
 module.exports = {
   collectCoverageFrom: ['<rootDir>/src/**/*.(js|ts)'],
@@ -45,5 +36,5 @@ module.exports = {
   transform: {
     '\\.(js|ts)$': 'babel-jest',
   },
-  transformIgnorePatterns: [`node_modules/(?!${esModules})`],
+  transformIgnorePatterns: [`node_modules/(?!${[...esModules].join('|')})`],
 };
