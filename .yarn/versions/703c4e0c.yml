@@ -1,0 +1,7 @@
+releases:
+  "@labforward/config": patch
+  "@labforward/eslint-config-drivers": patch
+  "@labforward/workspace": patch
+
+declined:
+  - "@labforward/eslint-config-base"
