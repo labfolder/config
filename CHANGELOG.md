@@ -9,6 +9,18 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/)
 
 ### Added
 
+### Changed
+
+### Deprecated
+
+### Fixed
+
+### Removed
+
+## [v0.0.5](https://github.com/labforward/config/releases/tag/v0.0.5) - 2022-11-21
+
+### Added
+
 - [[#LSC-5]](https://labforward.atlassian.net/browse/LSC-5) New configs for TS drivers
 
 ### Changed
