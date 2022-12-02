@@ -1,0 +1,6 @@
+{
+  "extends": "@labforward/config/tsconfig",
+  "compilerOptions": {
+    "lib": ["esnext", "dom"]
+  }
+}

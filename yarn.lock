@@ -403,6 +403,7 @@ __metadata:
   resolution: "@labforward/eslint-config-node@workspace:packages/eslint-config-node"
   dependencies:
     "@labforward/eslint-config-base": ~0.0.2
+    "@types/node": ^18.11.18
   languageName: unknown
   linkType: soft
 
@@ -490,6 +491,13 @@ __metadata:
   version: 0.0.29
   resolution: "@types/json5@npm:0.0.29"
   checksum: e60b153664572116dfea673c5bda7778dbff150498f44f998e34b5886d8afc47f16799280e4b6e241c0472aef1bc36add771c569c68fc5125fc2ae519a3eb9ac
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^18.11.18":
+  version: 18.11.18
+  resolution: "@types/node@npm:18.11.18"
+  checksum: 03f17f9480f8d775c8a72da5ea7e9383db5f6d85aa5fefde90dd953a1449bd5e4ffde376f139da4f3744b4c83942166d2a7603969a6f8ea826edfb16e6e3b49d
   languageName: node
   linkType: hard
 

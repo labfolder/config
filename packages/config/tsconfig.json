@@ -10,9 +10,6 @@
     "target": "es5",
     "jsx": "preserve"
   },
-  // These paths are relative to this config file and only used
-  // for TypeScript to be happy.
-  "include": ["test"],
-  "exclude": ["node_modules", "drivers"],
-  "compileOnSave": false
+  "compileOnSave": false,
+  "exclude": ["node_modules", "drivers"]
 }
