@@ -19,10 +19,10 @@
   "devDependencies": {
     "@labforward/config": "workspace:packages/config",
     "@labforward/eslint-config-node": "workspace:packages/eslint-config-node",
-    "eslint": "^8.7.0",
-    "execa": "^6.0.0",
-    "fs-extra": "^10.0.0",
-    "sort-package-json": "^1.53.1"
+    "eslint": "^8.31.0",
+    "execa": "^6.1.0",
+    "fs-extra": "^11.1.0",
+    "sort-package-json": "^2.1.0"
   },
   "engines": {
     "node": ">=12.11.0"
