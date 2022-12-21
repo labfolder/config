@@ -2,6 +2,9 @@ extends:
   - 'eslint:recommended'
   - 'plugin:prettier/recommended'
 parser: '@babel/eslint-parser'
+
+reportUnusedDisableDirectives: true
+
 rules:
   # https://eslint.org/docs/rules/
   # Possible Errors
