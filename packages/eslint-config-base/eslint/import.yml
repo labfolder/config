@@ -248,6 +248,9 @@ overrides:
           extensions: ['.d.ts', '.ts', '.tsx']
       import/extensions: ['.d.ts', '.ts', '.tsx']
 
+    rules:
+      import/no-unresolved: off
+
   - files:
       - '**/*.mjs'
       - '**/*.js'
