@@ -37,4 +37,7 @@ module.exports = {
     '\\.(js|ts)$': 'babel-jest',
   },
   transformIgnorePatterns: [`node_modules/(?!${[...esModules].join('|')})`],
+  verbose: true,
+  clearMocks: true,
+  restoreMocks: true,
 };
