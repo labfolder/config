@@ -16,10 +16,10 @@ aliases:
           - develop
   is_release: &is_release
     condition:
-      matches: { pattern: /^release\/.*$/ , value: << pipeline.git.branch >> }
+      matches: { pattern: /^release\/.*$/, value: << pipeline.git.branch >> }
   node_env: &node_env
     docker:
-      - image: circleci/node:12
+      - image: circleci/node:16
     working_directory: ~/repo
     environment:
       GIT_SSH_COMMAND: 'ssh -o IdentitiesOnly=yes -i ~/.ssh/id_rsa_ci'

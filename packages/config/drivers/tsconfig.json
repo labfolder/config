@@ -1,14 +1,12 @@
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
-    "target": "es2018", // ES2018 is required for Node 12 support.
+    "allowJs": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
     "lib": ["es2018"],
     "module": "commonjs",
-    "moduleResolution": "node",
-    "allowJs": true,
     "removeComments": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "target": "es2018" // ES2018 is required for Node 12 support.
   }
 }
