@@ -17,6 +17,20 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/)
 
 ### Removed
 
+## [v0.0.6](https://github.com/labforward/config/releases/tag/v0.0.6) - 2023-01-02
+
+### Added
+
+### Changed
+
+- [[#LSC-6]](https://labforward.atlassian.net/browse/LSC-6) Clear Jest mocks between tests and verbose output by default
+
+### Deprecated
+
+### Fixed
+
+### Removed
+
 ## [v0.0.5](https://github.com/labforward/config/releases/tag/v0.0.5) - 2022-11-21
 
 ### Added
