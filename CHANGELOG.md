@@ -11,6 +11,18 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/)
 
 ### Changed
 
+### Deprecated
+
+### Fixed
+
+### Removed
+
+## [v0.1.0](https://github.com/labforward/config/releases/tag/v0.1.0) - 2023-01-02
+
+### Added
+
+### Changed
+
 - [[#LSC-8]](https://labforward.atlassian.net/browse/LSC-8) Pin GitHub CLI to `v2.21.1`
 
 ### Deprecated
