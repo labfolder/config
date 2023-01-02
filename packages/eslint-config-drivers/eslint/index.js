@@ -44,8 +44,6 @@ module.exports = {
         jasmine: true,
       },
       rules: {
-        'max-statements': 'off',
-        'max-nested-callbacks': 'off',
         'jasmine/no-spec-dupes': ['warn', 'branch'],
       },
     },
@@ -55,10 +53,6 @@ module.exports = {
       extends: ['plugin:jest/recommended'],
       env: {
         'jest/globals': true,
-      },
-      rules: {
-        'max-statements': 'off',
-        'max-nested-callbacks': 'off',
       },
     },
   ],

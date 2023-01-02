@@ -16,10 +16,10 @@ aliases:
           - develop
   is_release: &is_release
     condition:
-      matches: { pattern: /^release\/.*$/ , value: << pipeline.git.branch >> }
+      matches: { pattern: /^release\/.*$/, value: << pipeline.git.branch >> }
   node_env: &node_env
     docker:
-      - image: circleci/node:12
+      - image: circleci/node:16
     working_directory: ~/repo
     environment:
       GIT_SSH_COMMAND: 'ssh -o IdentitiesOnly=yes -i ~/.ssh/id_rsa_ci'
@@ -48,7 +48,8 @@ commands:
       - run:
           name: Install GitHub CLI
           command: |
-            curl -L -o ~/cli.deb $(curl -s https://api.github.com/repos/cli/cli/releases/latest | grep -o "http.*linux_amd64.deb")
+            cli_url=$(curl -s --header "X-GitHub-Api-Version:2022-11-28" https://api.github.com/repos/cli/cli/releases/tags/v2.21.1 | grep -o "http.*linux_amd64.deb")
+            curl -L -o ~/cli.deb ${cli_url}
             sudo apt install ~/cli.deb
             echo ${GITHUB_ACCESS_TOKEN} | gh auth login --with-token
             gh auth status
@@ -92,6 +93,7 @@ jobs:
           name: Publish GitHub release
           command: |
             VERSION=v$(jq -r '.version' package.json)
+            gh repo set-default
             gh release create $VERSION --title "$VERSION" --target $CIRCLE_SHA1 --notes ""
 
 workflows:

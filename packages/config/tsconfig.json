@@ -2,17 +2,18 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "allowUmdGlobalAccess": true,
-    "lib": ["es2020"],
-    "resolveJsonModule": true,
+    "allowUnreachableCode": false,
+    "jsx": "preserve",
+    "lib": ["esnext"],
     "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
-    "target": "es5",
-    "jsx": "preserve"
+    "target": "es5"
   },
-  // These paths are relative to this config file and only used
-  // for TypeScript to be happy.
-  "include": ["test"],
-  "exclude": ["node_modules", "drivers"],
-  "compileOnSave": false
+  "compileOnSave": false,
+  "exclude": ["node_modules", "drivers"]
 }
