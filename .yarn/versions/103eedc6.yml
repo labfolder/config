@@ -1,8 +1,0 @@
-releases:
-  "@labforward/config": minor
-  "@labforward/eslint-config-base": minor
-  "@labforward/eslint-config-cypress": minor
-  "@labforward/eslint-config-drivers": minor
-  "@labforward/eslint-config-node": minor
-  "@labforward/eslint-config-react": minor
-  "@labforward/workspace": minor
