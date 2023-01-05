@@ -7,14 +7,7 @@ aliases:
         only:
           - main
           - master
-  not_develop_nor_main: &not_develop_nor_main
-    filters:
-      branches:
-        ignore:
-          - main
-          - master
-          - develop
-  is_release: &is_release
+  when_release: &when_release
     condition:
       matches: { pattern: /^release\/.*$/, value: << pipeline.git.branch >> }
   node_env: &node_env
@@ -25,13 +18,11 @@ aliases:
       GIT_SSH_COMMAND: 'ssh -o IdentitiesOnly=yes -i ~/.ssh/id_rsa_ci'
 
 commands:
-  auth_login:
+  npm_login:
     steps:
       - run:
-          name: Authenticate NPM and SSH
-          command: |
-            echo "${GIT_PRIVATE_KEY}" | base64 -d > ~/.ssh/id_rsa_ci
-            chmod 600 ~/.ssh/id_rsa_ci
+          name: Authenticate NPM
+          command: /
             npm set "@labforward:registry" "https://registry.npmjs.org/"
             npm set "//registry.npmjs.org/:_authToken" "${NPM_TOKEN_WRITE}"
   yarn_cache_install:
@@ -59,10 +50,9 @@ jobs:
     <<: *node_env
     steps:
       - checkout
-      - auth_login
       - yarn_cache_install
       - when:
-          <<: *is_release
+          <<: *when_release
           steps:
             - run:
                 name: Confirm release strategy was applied
@@ -71,14 +61,13 @@ jobs:
                     exit 1
                   fi
       - unless:
-          <<: *is_release
+          <<: *when_release
           steps:
             - run: yarn version check
   lint:
     <<: *node_env
     steps:
       - checkout
-      - auth_login
       - yarn_cache_install
       - run: yarn lint
   release:
@@ -86,7 +75,7 @@ jobs:
     steps:
       - checkout
       - install_gh
-      - auth_login
+      - npm_login
       - yarn_cache_install
       - run: yarn yolo
       - run:
@@ -99,14 +88,13 @@ jobs:
 workflows:
   tests:
     jobs:
-      - check:
-          <<: *not_develop_nor_main
-          context: laboperator-drivers
-      - lint:
-          <<: *not_develop_nor_main
-          context: laboperator-drivers
-  release:
-    jobs:
+      - check
+      - lint
       - release:
           <<: *only_main
-          context: laboperator-drivers
+          context:
+            - laboperator-drivers
+            - npm-publishing
+          requires:
+            - check
+            - lint
