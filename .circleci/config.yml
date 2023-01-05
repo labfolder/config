@@ -7,13 +7,6 @@ aliases:
         only:
           - main
           - master
-  not_develop_nor_main: &not_develop_nor_main
-    filters:
-      branches:
-        ignore:
-          - main
-          - master
-          - develop
   when_release: &when_release
     condition:
       matches: { pattern: /^release\/.*$/, value: << pipeline.git.branch >> }
@@ -25,13 +18,6 @@ aliases:
       GIT_SSH_COMMAND: 'ssh -o IdentitiesOnly=yes -i ~/.ssh/id_rsa_ci'
 
 commands:
-  ssh_login:
-    steps:
-      - run:
-          name: Authenticate SSH
-          command: |
-            echo "${GIT_PRIVATE_KEY}" | base64 -d > ~/.ssh/id_rsa_ci
-            chmod 600 ~/.ssh/id_rsa_ci
   npm_login:
     steps:
       - run:
@@ -64,7 +50,6 @@ jobs:
     <<: *node_env
     steps:
       - checkout
-      - ssh_login
       - yarn_cache_install
       - when:
           <<: *when_release
@@ -83,7 +68,6 @@ jobs:
     <<: *node_env
     steps:
       - checkout
-      - ssh_login
       - yarn_cache_install
       - run: yarn lint
   release:
@@ -91,7 +75,6 @@ jobs:
     steps:
       - checkout
       - install_gh
-      - ssh_login
       - npm_login
       - yarn_cache_install
       - run: yarn yolo
@@ -105,10 +88,8 @@ jobs:
 workflows:
   tests:
     jobs:
-      - check:
-          context: laboperator-drivers
-      - lint:
-          context: laboperator-drivers
+      - check
+      - lint
       - release:
           <<: *only_main
           context:
