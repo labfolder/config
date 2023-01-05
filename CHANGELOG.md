@@ -11,6 +11,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/)
 
 ### Changed
 
+- [[#LSC-9]](https://labforward.atlassian.net/browse/LSC-9) Update CI config, use new contexts
+
 ### Deprecated
 
 ### Fixed
