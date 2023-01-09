@@ -14,8 +14,6 @@ aliases:
     docker:
       - image: circleci/node:16
     working_directory: ~/repo
-    environment:
-      GIT_SSH_COMMAND: 'ssh -o IdentitiesOnly=yes -i ~/.ssh/id_rsa_ci'
 
 commands:
   npm_login:
@@ -93,7 +91,7 @@ workflows:
       - release:
           <<: *only_main
           context:
-            - laboperator-drivers
+            - gh-repo-token
             - npm-publishing
           requires:
             - check
