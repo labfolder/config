@@ -11,10 +11,9 @@
   "license": "Apache-2.0",
   "author": "labforward GmbH",
   "main": "./eslint/index.js",
-  "scripts": {},
   "dependencies": {
     "@labforward/eslint-config-base": "~0.1.0",
-    "@types/node": "^18.11.18"
+    "@types/node": "^18.15.3"
   },
   "publishConfig": {
     "access": "public"
