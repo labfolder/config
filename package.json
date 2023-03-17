@@ -24,6 +24,7 @@
     "fs-extra": "^11.1.0",
     "sort-package-json": "^2.1.0"
   },
+  "packageManager": "yarn@3.5.0",
   "engines": {
     "node": "^16.0.0 || >=18.0.0"
   },
