@@ -1,6 +1,6 @@
 {
   "name": "@labforward/eslint-config-node",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "keywords": [],
   "repository": {
@@ -12,7 +12,7 @@
   "author": "labforward GmbH",
   "main": "./eslint/index.js",
   "dependencies": {
-    "@labforward/eslint-config-base": "~0.1.0",
+    "@labforward/eslint-config-base": "~0.1.1",
     "@types/node": "^18.15.3"
   },
   "publishConfig": {
