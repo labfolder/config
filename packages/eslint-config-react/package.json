@@ -1,6 +1,6 @@
 {
   "name": "@labforward/eslint-config-react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "keywords": [],
   "repository": {
@@ -11,10 +11,9 @@
   "license": "Apache-2.0",
   "author": "labforward GmbH",
   "main": "./eslint/index.js",
-  "scripts": {},
   "dependencies": {
-    "@labforward/eslint-config-base": "~0.1.0",
-    "eslint-plugin-react": "^7.31.11",
+    "@labforward/eslint-config-base": "~0.1.1",
+    "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0"
   },
   "publishConfig": {

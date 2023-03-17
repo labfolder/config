@@ -1,6 +1,6 @@
 {
   "name": "@labforward/eslint-config-cypress",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "keywords": [],
   "repository": {
@@ -11,9 +11,8 @@
   "license": "Apache-2.0",
   "author": "labforward GmbH",
   "main": "./eslint/index.js",
-  "scripts": {},
   "dependencies": {
-    "@labforward/eslint-config-base": "~0.1.0",
+    "@labforward/eslint-config-base": "~0.1.1",
     "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-mocha": "^10.1.0"
   },
