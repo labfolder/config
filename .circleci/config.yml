@@ -1,12 +1,6 @@
 version: 2.1
 
 aliases:
-  only_main: &only_main
-    filters:
-      branches:
-        only:
-          - main
-          - master
   when_release: &when_release
     condition:
       matches: { pattern: /^release\/.*$/, value: << pipeline.git.branch >> }
@@ -90,11 +84,18 @@ workflows:
     jobs:
       - check
       - lint
+      - release-approval:
+          filters: &filters_only_release_branches
+            branches:
+              only: /release\/.*/
+          type: approval
+          requires:
+            - check
+            - lint
       - release:
-          <<: *only_main
+          filters: *filters_only_release_branches
           context:
             - gh-repo-token
             - npm-publishing
           requires:
-            - check
-            - lint
+            - release-approval
