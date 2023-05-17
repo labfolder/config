@@ -23,11 +23,11 @@
     "tsc": "tsc --noEmit"
   },
   "dependencies": {
-    "@babel/core": "^7.21.3",
-    "prettier": "^2.8.4",
+    "@babel/core": "^7.21.8",
+    "prettier": "^2.8.8",
     "prettier-plugin-import-sort": "^0.0.7",
     "sort-package-json": "^2.4.1",
-    "typescript": "^5.0.2"
+    "typescript": "^5.0.4"
   },
   "publishConfig": {
     "access": "public"

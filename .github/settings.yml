@@ -1,6 +1,6 @@
 _extends: repo-settings
 branches:
-  - name: develop
+  - name: main
     protection:
       required_status_checks:
         contexts:
