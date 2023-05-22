@@ -5,6 +5,9 @@ parser: '@babel/eslint-parser'
 
 reportUnusedDisableDirectives: true
 
+plugins:
+  - sort-destructure-keys
+
 rules:
   # https://eslint.org/docs/rules/
   # Possible Errors
@@ -130,6 +133,12 @@ rules:
       },
     ]
   prefer-object-spread: error
+  sort-keys:
+    - error
+    - asc
+    - allowLineSeparatedGroups: true
+      caseSensitive: false
+      natural: true
   spaced-comment:
     - warn
     - always
@@ -160,6 +169,9 @@ rules:
   prefer-rest-params: error
   prefer-spread: error
   prefer-template: error
+  sort-destructure-keys/sort-destructure-keys:
+    - error
+    - caseSensitive: false
   symbol-description: error
 
 overrides:
@@ -199,3 +211,8 @@ overrides:
       '@typescript-eslint/no-use-before-define':
         - error
         - functions: false
+
+      '@typescript-eslint/member-ordering':
+        - error
+        - default:
+            order: natural-case-insensitive
