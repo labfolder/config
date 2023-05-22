@@ -18,10 +18,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "importSort": {
-    ".js, .jsx, .mjs, .ts, .tsx": {
-      "style": "@labforward/config/import-sort"
-    }
   }
 }
