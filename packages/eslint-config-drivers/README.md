@@ -22,16 +22,6 @@ Create a `.prettierrc.js` file with the following contents to extend this config
 module.exports = require('@labforward/config/prettier');
 ```
 
-On your `package.json` add the following property:
-
-```json
-"importSort": {
-  ".js, .jsx, .mjs, .ts, .tsx": {
-    "style": "@labforward/config/import-sort"
-  }
-}
-```
-
 ## For TypeScript Projects
 
 Needed dependencies: `yarn add -D eslint typescript`
@@ -75,14 +65,4 @@ Create a `.prettierrc.js` file with the following contents to extend this config
 
 ```javascript
 module.exports = require('@labforward/config/prettier');
-```
-
-On your `package.json` add the following property:
-
-```json
-"importSort": {
-  ".js, .jsx, .mjs, .ts, .tsx": {
-    "style": "@labforward/config/import-sort"
-  }
-}
 ```

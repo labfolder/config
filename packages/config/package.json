@@ -25,16 +25,11 @@
   "dependencies": {
     "@babel/core": "^7.21.8",
     "prettier": "^2.8.8",
-    "prettier-plugin-import-sort": "^0.0.7",
+    "prettier-plugin-organize-imports": "^3.2.2",
     "sort-package-json": "^2.4.1",
     "typescript": "^5.0.4"
   },
   "publishConfig": {
     "access": "public"
-  },
-  "importSort": {
-    ".js, .jsx, .mjs, .ts, .tsx": {
-      "style": "@labforward/config/import-sort"
-    }
   }
 }
