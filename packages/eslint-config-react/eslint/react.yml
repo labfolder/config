@@ -23,6 +23,7 @@ overrides:
   - files:
       - '**/*.tsx'
     rules:
+      import/prefer-default-export: error
       react/jsx-sort-props:
         - error
         - ignoreCase: true
