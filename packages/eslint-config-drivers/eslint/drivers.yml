@@ -1,0 +1,49 @@
+extends: '@labforward/eslint-config-base'
+parser: ''
+parserOptions:
+  ecmaVersion: 2018
+  sourceType: module
+  requireConfigFile: false
+
+env:
+  node: true
+  es2017: true
+
+rules:
+  camelcase:
+    - warn
+    - properties: never
+  'class-methods-use-this': warn
+  'no-console': warn
+  'no-underscore-dangle':
+    - warn
+    - allow: ['_updateCycle']
+      allowAfterThis: true
+  'import/no-extraneous-dependencies': warn
+
+overrides:
+  - files: ['**/*.ts', '**/*.tsx']
+    settings:
+      'import/resolver':
+        typescript:
+          alwaysTryTypes: true
+  - files: ['spec/**/*.js']
+    plugins: ['jasmine']
+    extends: ['plugin:jasmine/recommended']
+    env:
+      jasmine: true
+    rules:
+      'jasmine/no-spec-dupes': ['warn', 'branch']
+  - files: ['spec/**/*.ts', 'packages/*/spec/**/*.ts']
+    plugins: ['jest']
+    extends: ['plugin:jest/recommended']
+    env:
+      'jest/globals': true
+
+# These paths are relative to the .eslintrc file that extends this config.
+ignorePatterns:
+  - 'dist/**'
+  - 'coverage/**'
+  - 'release/**'
+  - 'node_modules/**'
+  - 'package.json'

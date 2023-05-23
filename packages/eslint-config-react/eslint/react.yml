@@ -21,7 +21,10 @@ globals:
   process: true
 overrides:
   - files:
-      - '**/*.ts'
       - '**/*.tsx'
     rules:
+      react/jsx-sort-props:
+        - error
+        - ignoreCase: true
+          reservedFirst: ['key', 'ref']
       react/prop-types: off

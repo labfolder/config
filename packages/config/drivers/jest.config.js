@@ -33,11 +33,14 @@ module.exports = {
       statements: 80,
     },
   },
+
+  clearMocks: true,
+  restoreMocks: true,
+
   transform: {
     '\\.(js|ts)$': 'babel-jest',
   },
   transformIgnorePatterns: [`node_modules/(?!${[...esModules].join('|')})`],
+
   verbose: true,
-  clearMocks: true,
-  restoreMocks: true,
 };
