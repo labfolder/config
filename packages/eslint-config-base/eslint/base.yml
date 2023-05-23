@@ -153,6 +153,12 @@ rules:
         - '!'
         - '/'
   # ECMAScript 6
+  no-restricted-imports:
+    - warn
+    - patterns:
+        - group: ['../*']
+          message: 'Usage of relative parent imports is not allowed.'
+
   no-useless-computed-key: error
   no-useless-constructor: error
   no-useless-rename: error
