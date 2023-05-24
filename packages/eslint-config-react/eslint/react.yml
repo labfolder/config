@@ -25,7 +25,7 @@ overrides:
     rules:
       import/prefer-default-export: error
       react/jsx-sort-props:
-        - warn
+        - error
         - ignoreCase: true
           reservedFirst: ['key', 'ref']
       react/prop-types: off
