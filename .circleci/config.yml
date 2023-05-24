@@ -77,7 +77,7 @@ jobs:
           command: |
             VERSION=v$(jq -r '.version' package.json)
             gh repo set-default
-            gh release create $VERSION --title "$VERSION" --target $CIRCLE_SHA1 --notes ""
+            gh release create $VERSION --title "$VERSION" --target $CIRCLE_SHA1 --generate-notes
 
 workflows:
   tests:
