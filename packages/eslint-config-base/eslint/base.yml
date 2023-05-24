@@ -134,7 +134,7 @@ rules:
     ]
   prefer-object-spread: error
   sort-keys:
-    - error
+    - warn
     - asc
     - allowLineSeparatedGroups: true
       caseSensitive: false
@@ -219,6 +219,6 @@ overrides:
         - functions: false
 
       '@typescript-eslint/member-ordering':
-        - error
+        - warn
         - default:
             order: natural-case-insensitive
