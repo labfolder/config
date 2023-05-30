@@ -1,4 +1,5 @@
 releases:
+  "@labforward/config": patch
   "@labforward/eslint-config-base": patch
   "@labforward/workspace": patch
 
