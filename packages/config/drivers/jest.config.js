@@ -7,7 +7,7 @@ const esModules = new Set();
 // This function finds all of these dependencies.
 const findEsModules = (packageJsonFile) => {
   const { dependencies } = JSON.parse(
-    fs.readFileSync(packageJsonFile, 'utf-8')
+    fs.readFileSync(packageJsonFile, 'utf-8'),
   );
 
   Object.entries(dependencies)

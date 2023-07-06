@@ -8,7 +8,7 @@ const packagesDir = path.resolve('./packages');
 
 const publishSafe = async (packageDir) => {
   const { name, version } = await fse.readJson(
-    path.join(packageDir, 'package.json')
+    path.join(packageDir, 'package.json'),
   );
 
   console.log(name, version);
@@ -31,13 +31,13 @@ const publishSafe = async (packageDir) => {
 
 (async () => {
   const packages = (await fse.readdir(packagesDir)).map((dir) =>
-    path.join(packagesDir, dir)
+    path.join(packagesDir, dir),
   );
 
   await packages.reduce(
     (lastPackage, packageDir) =>
       lastPackage.then(() => publishSafe(packageDir)),
-    Promise.resolve()
+    Promise.resolve(),
   );
 })().catch((err) => {
   console.error(err);
