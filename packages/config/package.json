@@ -23,7 +23,7 @@
     "tsc": "tsc --noEmit"
   },
   "dependencies": {
-    "@babel/core": "^7.22.6",
+    "@babel/core": "^7.22.8",
     "prettier": "^3.0.0",
     "prettier-plugin-organize-imports": "^3.2.2",
     "sort-package-json": "^2.5.1",
