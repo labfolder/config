@@ -1,8 +1,7 @@
 /* eslint-disable no-console */
-import path from 'path';
-
 import { execa } from 'execa';
 import fse from 'fs-extra';
+import path from 'path';
 
 const packagesDir = path.resolve('./packages');
 
