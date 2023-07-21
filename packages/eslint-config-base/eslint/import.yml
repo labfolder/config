@@ -119,8 +119,13 @@ rules:
   # TODO: enforce a stricter convention in module import order?
   import/order:
     - error
-    - groups: [['builtin', 'external', 'internal']]
+    - groups: ['builtin', 'external', 'internal']
       newlines-between: always
+      pathGroups:
+        - group: 'internal'
+          pattern: '~/**'
+        - group: 'internal'
+          pattern: '@/**'
 
   # Require a newline after the last import/require in a group
   # https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/newline-after-import.md
