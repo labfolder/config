@@ -1,0 +1,3 @@
+releases:
+  "@labforward/eslint-config-react": patch
+  "@labforward/workspace": patch
