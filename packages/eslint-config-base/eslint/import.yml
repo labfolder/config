@@ -119,7 +119,7 @@ rules:
   # TODO: enforce a stricter convention in module import order?
   import/order:
     - error
-    - groups: [['builtin', 'external', 'internal']]
+    - groups: ['builtin', 'external', 'internal']
       newlines-between: always
 
   # Require a newline after the last import/require in a group

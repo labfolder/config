@@ -1,3 +1,10 @@
 releases:
+  "@labforward/config": patch
+  "@labforward/eslint-config-base": patch
   "@labforward/eslint-config-react": patch
   "@labforward/workspace": patch
+
+declined:
+  - "@labforward/eslint-config-cypress"
+  - "@labforward/eslint-config-drivers"
+  - "@labforward/eslint-config-node"
