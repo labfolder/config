@@ -1,6 +1,6 @@
 {
   "name": "@labforward/eslint-config-cypress",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "",
   "keywords": [],
   "repository": {
@@ -12,7 +12,7 @@
   "author": "labforward GmbH",
   "main": "./eslint/index.js",
   "dependencies": {
-    "@labforward/eslint-config-base": "~0.1.4",
+    "@labforward/eslint-config-base": "~0.1.5",
     "eslint-plugin-cypress": "^2.13.3",
     "eslint-plugin-mocha": "^10.1.0"
   },
