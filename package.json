@@ -21,7 +21,7 @@
     "@labforward/config": "~0.1.5",
     "@labforward/eslint-config-node": "~0.1.5",
     "eslint": "^8.47.0",
-    "execa": "^7.2.0",
+    "execa": "^8.0.1",
     "fs-extra": "^11.1.1",
     "prettier": "^3.0.2",
     "sort-package-json": "^2.5.1",
