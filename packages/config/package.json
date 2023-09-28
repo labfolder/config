@@ -25,7 +25,7 @@
   "dependencies": {
     "@babel/core": "^7.23.0",
     "prettier": "^3.0.3",
-    "sort-package-json": "^2.5.1",
+    "sort-package-json": "^2.6.0",
     "typescript": "^5.2.2"
   },
   "publishConfig": {
