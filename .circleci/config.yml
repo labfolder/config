@@ -26,7 +26,7 @@ commands:
           yarn install --immutable
       - save_cache:
           paths:
-            - ~/repo/.yarn/cache
+            - ~/.yarn/berry
           key: packages-{{ checksum "yarn.lock" }}-{{ checksum "package.json" }}
   install_gh:
     steps:
