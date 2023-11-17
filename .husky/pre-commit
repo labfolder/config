@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+if [ -n "$(git diff --name-only --staged | grep 'yarn.lock')" ]; then
+  yarn dedupe
+  git add -u
+fi
