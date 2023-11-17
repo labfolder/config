@@ -448,6 +448,7 @@ __metadata:
     eslint: "npm:^8.53.0"
     execa: "npm:^8.0.1"
     fs-extra: "npm:^11.1.1"
+    husky: "npm:^8.0.0"
     prettier: "npm:^3.1.0"
     sort-package-json: "npm:^2.6.0"
     typescript: "npm:^5.2.2"
@@ -1978,6 +1979,15 @@ __metadata:
   version: 5.0.0
   resolution: "human-signals@npm:5.0.0"
   checksum: 5a9359073fe17a8b58e5a085e9a39a950366d9f00217c4ff5878bd312e09d80f460536ea6a3f260b5943a01fe55c158d1cea3fc7bee3d0520aeef04f6d915c82
+  languageName: node
+  linkType: hard
+
+"husky@npm:^8.0.0":
+  version: 8.0.3
+  resolution: "husky@npm:8.0.3"
+  bin:
+    husky: lib/bin.js
+  checksum: 6722591771c657b91a1abb082e07f6547eca79144d678e586828ae806499d90dce2a6aee08b66183fd8b085f19d20e0990a2ad396961746b4c8bd5bdb619d668
   languageName: node
   linkType: hard
 

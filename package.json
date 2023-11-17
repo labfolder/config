@@ -13,6 +13,7 @@
     "bump:apply": "yarn version check && yarn version apply --all",
     "lint": "eslint . .circleci",
     "lint:fix": "eslint . .circleci --fix",
+    "postinstall": "husky install",
     "sort": "sort-package-json ./package.json packages/*/package.json",
     "yolo": "node .circleci/publish.mjs"
   },
@@ -23,6 +24,7 @@
     "eslint": "^8.53.0",
     "execa": "^8.0.1",
     "fs-extra": "^11.1.1",
+    "husky": "^8.0.0",
     "prettier": "^3.1.0",
     "sort-package-json": "^2.6.0",
     "typescript": "^5.2.2"
