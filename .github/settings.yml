@@ -6,3 +6,8 @@ branches:
         contexts:
           - 'ci/circleci: check'
           - 'ci/circleci: lint'
+
+labels:
+  - name: "kodiak: merge.method = 'squash'"
+    color: '#ffa500'
+    description: Squash PR when merging
