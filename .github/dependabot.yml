@@ -20,3 +20,6 @@ updates:
         patterns:
           - "eslint"
           - "eslint-*"
+      typescript-eslint:
+        patterns:
+          - "@typescript-eslint/*"
