@@ -24,7 +24,7 @@
     "eslint": "^8.56.0",
     "execa": "^8.0.1",
     "fs-extra": "^11.2.0",
-    "husky": "^9.0.6",
+    "husky": "^9.0.7",
     "prettier": "^3.2.4",
     "sort-package-json": "^2.7.0",
     "typescript": "^5.3.3"
