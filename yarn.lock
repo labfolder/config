@@ -405,7 +405,7 @@ __metadata:
   dependencies:
     "@labforward/eslint-config-base": "npm:~0.1.5"
     eslint-plugin-cypress: "npm:^2.15.1"
-    eslint-plugin-mocha: "npm:^10.3.0"
+    eslint-plugin-mocha: "npm:^10.4.0"
   languageName: unknown
   linkType: soft
 
@@ -1438,15 +1438,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-mocha@npm:^10.3.0":
-  version: 10.3.0
-  resolution: "eslint-plugin-mocha@npm:10.3.0"
+"eslint-plugin-mocha@npm:^10.4.0":
+  version: 10.4.0
+  resolution: "eslint-plugin-mocha@npm:10.4.0"
   dependencies:
     eslint-utils: "npm:^3.0.0"
+    globals: "npm:^14.0.0"
     rambda: "npm:^7.4.0"
   peerDependencies:
     eslint: ">=7.0.0"
-  checksum: 33f46c73dc89dec02b586045875d4e4b74857e96c0a8dcf6071b033bb91bbce30875179732008a5158eea5acd7eb633f59e5f9509b045bd5856cbed67f1aada9
+  checksum: 99fc3e1fa4a8e0a7d902b5414b46e3b8f42d524dd3a339e88ac187bbfd03144a3ceb790086339b7b59672cd16992e8365eb6190439e7e202420851adbb480100
   languageName: node
   linkType: hard
 
@@ -1971,6 +1972,13 @@ __metadata:
   dependencies:
     type-fest: "npm:^0.20.2"
   checksum: 90573e825401adbe0ef25db1b52e8f74afe4a1087049edd972f1ace77b391753fc3fe51eba9b6962c62e2282645f0a27ce20251662cdc247631c4861f32d56eb
+  languageName: node
+  linkType: hard
+
+"globals@npm:^14.0.0":
+  version: 14.0.0
+  resolution: "globals@npm:14.0.0"
+  checksum: b96ff42620c9231ad468d4c58ff42afee7777ee1c963013ff8aabe095a451d0ceeb8dcd8ef4cbd64d2538cef45f787a78ba3a9574f4a634438963e334471302d
   languageName: node
   linkType: hard
 
