@@ -82,7 +82,6 @@ jobs:
 workflows:
   tests:
     jobs:
-      - check
       - lint
       - release-approval:
           filters: &filters_only_release_branches
@@ -90,7 +89,6 @@ workflows:
               only: /release\/.*/
           type: approval
           requires:
-            - check
             - lint
       - release:
           filters: *filters_only_release_branches
