@@ -6,7 +6,7 @@ aliases:
       matches: { pattern: /^release\/.*$/, value: << pipeline.git.branch >> }
   node_env: &node_env
     docker:
-      - image: cimg/node:16.19
+      - image: cimg/node:lts
     working_directory: ~/repo
 
 commands:
@@ -22,7 +22,7 @@ commands:
       - restore_cache:
           key: packages-{{ checksum "yarn.lock" }}-{{ checksum "package.json" }}
       - run: |
-          corepack enable
+          sudo corepack enable
           yarn install --immutable
       - save_cache:
           paths:
