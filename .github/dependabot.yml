@@ -22,14 +22,6 @@ updates:
       - dependency-name: eslint
         versions:
           - '>= 9'
-
-      # eslint-plugin-jest have a hard dependency on @typescript-eslint/utils@v6
-      - dependency-name: "@typescript-eslint/eslint-plugin"
-        versions:
-          - '> 6'
-      - dependency-name: "@typescript-eslint/parser"
-        versions:
-          - '> 6'
     groups:
       babel:
         patterns:
