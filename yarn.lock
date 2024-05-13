@@ -440,7 +440,7 @@ __metadata:
     "@labforward/config": "npm:~0.1.6"
     "@labforward/eslint-config-node": "npm:~0.1.6"
     eslint: "npm:^8.57.0"
-    execa: "npm:^9.0.0"
+    execa: "npm:^9.0.2"
     fs-extra: "npm:^11.2.0"
     husky: "npm:^9.0.11"
     prettier: "npm:^3.2.5"
@@ -1660,9 +1660,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"execa@npm:^9.0.0":
-  version: 9.0.0
-  resolution: "execa@npm:9.0.0"
+"execa@npm:^9.0.2":
+  version: 9.0.2
+  resolution: "execa@npm:9.0.2"
   dependencies:
     "@sindresorhus/merge-streams": "npm:^4.0.0"
     cross-spawn: "npm:^7.0.3"
@@ -1676,7 +1676,7 @@ __metadata:
     signal-exit: "npm:^4.1.0"
     strip-final-newline: "npm:^4.0.0"
     yoctocolors: "npm:^2.0.0"
-  checksum: fc0d8f21f015af7ad69a50a692d2c106a506c885ef1d8f913ac3257c45a1351110ae13081a2969c6d8b1647b831971834f1d57d6265f160e2cd20408acfe82bb
+  checksum: 8870320b16bfb6a6d39ddbc3907bc04f2b1e30e385a7c24b5608f2ffd03d0901245a233c42012a002a4a74b9fbda0372bf787d1bcf208bf8921cff11d6bd881f
   languageName: node
   linkType: hard
 
