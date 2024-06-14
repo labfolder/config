@@ -411,7 +411,7 @@ __metadata:
   resolution: "@labforward/eslint-config-drivers@workspace:packages/eslint-config-drivers"
   dependencies:
     "@labforward/eslint-config-base": "npm:~0.1.6"
-    eslint-plugin-jasmine: "npm:^4.1.3"
+    eslint-plugin-jasmine: "npm:^4.2.0"
     eslint-plugin-jest: "npm:^28.6.0"
   languageName: unknown
   linkType: soft
@@ -1395,10 +1395,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jasmine@npm:^4.1.3":
-  version: 4.1.3
-  resolution: "eslint-plugin-jasmine@npm:4.1.3"
-  checksum: 85c4f1df6558d5f1b34b916d1b7282fcc09431b90a05509441ae564e6a8685ef943150ffe41648833ca40e8624edbf6f00072b368124de6927bfbf0250efba39
+"eslint-plugin-jasmine@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "eslint-plugin-jasmine@npm:4.2.0"
+  checksum: 1f81089b0beda0af88e3a4c18b49a79a549ca5d2ab06e7ffd97bea48934a5a2d3de2247970199d453b01e94cd6eda783c446ad87513eecc63b78ef338715b3c5
   languageName: node
   linkType: hard
 
