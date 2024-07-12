@@ -18,7 +18,7 @@
     "yolo": "node .circleci/publish.mjs"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.7",
+    "@babel/core": "^7.24.8",
     "@labforward/config": "~0.1.6",
     "@labforward/eslint-config-node": "~0.1.6",
     "eslint": "^8.57.0",
