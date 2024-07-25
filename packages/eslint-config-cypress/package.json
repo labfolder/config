@@ -13,7 +13,7 @@
   "main": "./eslint/index.js",
   "dependencies": {
     "@labforward/eslint-config-base": "~0.1.6",
-    "eslint-plugin-cypress": "^3.3.0",
+    "eslint-plugin-cypress": "^3.4.0",
     "eslint-plugin-mocha": "^10.4.1"
   },
   "publishConfig": {
