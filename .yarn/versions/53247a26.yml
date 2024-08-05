@@ -1,7 +1,0 @@
-releases:
-  "@labforward/eslint-config-base": patch
-  "@labforward/eslint-config-cypress": patch
-  "@labforward/eslint-config-drivers": patch
-  "@labforward/eslint-config-node": patch
-  "@labforward/eslint-config-react": patch
-  "@labforward/workspace": patch
