@@ -12,7 +12,7 @@
   "author": "labforward GmbH",
   "main": "./eslint/index.js",
   "dependencies": {
-    "@babel/eslint-parser": "^7.25.7",
+    "@babel/eslint-parser": "^7.25.8",
     "@labforward/config": "~0.1.6",
     "@typescript-eslint/eslint-plugin": "^8.8.1",
     "@typescript-eslint/parser": "^8.8.1",
