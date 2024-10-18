@@ -22,7 +22,7 @@
     "@labforward/config": "~0.1.6",
     "@labforward/eslint-config-node": "~0.1.7",
     "eslint": "^8.57.1",
-    "execa": "^9.4.0",
+    "execa": "^9.4.1",
     "fs-extra": "^11.2.0",
     "husky": "^9.1.6",
     "prettier": "^3.3.3",
