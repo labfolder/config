@@ -14,7 +14,7 @@
   "dependencies": {
     "@labforward/eslint-config-base": "~0.1.7",
     "eslint-plugin-jasmine": "^4.2.2",
-    "eslint-plugin-jest": "^28.8.3"
+    "eslint-plugin-jest": "^28.9.0"
   },
   "publishConfig": {
     "access": "public"
