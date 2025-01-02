@@ -13,7 +13,7 @@
   "main": "./eslint/index.js",
   "dependencies": {
     "@labforward/eslint-config-base": "~0.1.7",
-    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react": "^7.37.3",
     "eslint-plugin-react-hooks": "^5.1.0"
   },
   "publishConfig": {
