@@ -306,7 +306,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@labforward/config@npm:~0.1.8, @labforward/config@workspace:packages/config":
+"@labforward/config@npm:~0.1.6, @labforward/config@workspace:packages/config":
   version: 0.0.0-use.local
   resolution: "@labforward/config@workspace:packages/config"
   dependencies:
@@ -317,12 +317,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@labforward/eslint-config-base@npm:~0.1.8, @labforward/eslint-config-base@workspace:packages/eslint-config-base":
+"@labforward/eslint-config-base@npm:~0.1.7, @labforward/eslint-config-base@workspace:packages/eslint-config-base":
   version: 0.0.0-use.local
   resolution: "@labforward/eslint-config-base@workspace:packages/eslint-config-base"
   dependencies:
     "@babel/eslint-parser": "npm:^7.26.8"
-    "@labforward/config": "npm:~0.1.8"
+    "@labforward/config": "npm:~0.1.6"
     "@typescript-eslint/eslint-plugin": "npm:^8.26.0"
     "@typescript-eslint/parser": "npm:^8.26.0"
     eslint: "npm:^8.57.1"
@@ -339,7 +339,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@labforward/eslint-config-cypress@workspace:packages/eslint-config-cypress"
   dependencies:
-    "@labforward/eslint-config-base": "npm:~0.1.8"
+    "@labforward/eslint-config-base": "npm:~0.1.7"
     eslint-plugin-cypress: "npm:^4.1.0"
     eslint-plugin-mocha: "npm:^10.5.0"
   languageName: unknown
@@ -349,17 +349,17 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@labforward/eslint-config-drivers@workspace:packages/eslint-config-drivers"
   dependencies:
-    "@labforward/eslint-config-base": "npm:~0.1.8"
+    "@labforward/eslint-config-base": "npm:~0.1.7"
     eslint-plugin-jasmine: "npm:^4.2.2"
     eslint-plugin-jest: "npm:^28.11.0"
   languageName: unknown
   linkType: soft
 
-"@labforward/eslint-config-node@npm:~0.1.8, @labforward/eslint-config-node@workspace:packages/eslint-config-node":
+"@labforward/eslint-config-node@npm:~0.1.7, @labforward/eslint-config-node@workspace:packages/eslint-config-node":
   version: 0.0.0-use.local
   resolution: "@labforward/eslint-config-node@workspace:packages/eslint-config-node"
   dependencies:
-    "@labforward/eslint-config-base": "npm:~0.1.8"
+    "@labforward/eslint-config-base": "npm:~0.1.7"
     "@types/node": "npm:*"
   languageName: unknown
   linkType: soft
@@ -368,7 +368,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@labforward/eslint-config-react@workspace:packages/eslint-config-react"
   dependencies:
-    "@labforward/eslint-config-base": "npm:~0.1.8"
+    "@labforward/eslint-config-base": "npm:~0.1.7"
     eslint-plugin-react: "npm:^7.37.4"
     eslint-plugin-react-hooks: "npm:^5.2.0"
   languageName: unknown
@@ -379,8 +379,8 @@ __metadata:
   resolution: "@labforward/workspace@workspace:."
   dependencies:
     "@babel/core": "npm:^7.26.9"
-    "@labforward/config": "npm:~0.1.8"
-    "@labforward/eslint-config-node": "npm:~0.1.8"
+    "@labforward/config": "npm:~0.1.6"
+    "@labforward/eslint-config-node": "npm:~0.1.7"
     eslint: "npm:^8.57.1"
     execa: "npm:^9.5.2"
     fs-extra: "npm:^11.3.0"
