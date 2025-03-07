@@ -1,6 +1,6 @@
 {
   "name": "@labforward/eslint-config-drivers",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "",
   "keywords": [],
   "repository": {
@@ -12,7 +12,7 @@
   "author": "labforward GmbH",
   "main": "./eslint/index.js",
   "dependencies": {
-    "@labforward/eslint-config-base": "~0.1.7",
+    "@labforward/eslint-config-base": "~0.1.8",
     "eslint-plugin-jasmine": "^4.2.2",
     "eslint-plugin-jest": "^28.11.0"
   },
