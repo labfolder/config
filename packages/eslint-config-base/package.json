@@ -18,10 +18,10 @@
     "@typescript-eslint/parser": "^8.28.0",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^10.1.1",
-    "eslint-import-resolver-typescript": "^4.2.2",
+    "eslint-import-resolver-typescript": "^4.2.3",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-prettier": "^5.2.4",
+    "eslint-plugin-prettier": "^5.2.5",
     "eslint-plugin-sort-destructure-keys": "^2.0.0"
   },
   "publishConfig": {
