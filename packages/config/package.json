@@ -5,11 +5,11 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/labforward/config.git",
+    "url": "https://github.com/labfolder/config.git",
     "directory": "packages/config"
   },
   "license": "Apache-2.0",
-  "author": "labforward GmbH",
+  "author": "labfolder GmbH",
   "exports": {
     "./import-sort": "./import-sort.js",
     "./prettier": "./.prettierrc.js",
