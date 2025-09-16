@@ -11,9 +11,6 @@
   "license": "Apache-2.0",
   "author": "labforward GmbH",
   "exports": {
-    "./drivers/*": "./drivers/*.js",
-    "./drivers/tsconfig.json": "./drivers/tsconfig.json",
-    "./drivers/tsconfig": "./drivers/tsconfig.json",
     "./import-sort": "./import-sort.js",
     "./prettier": "./.prettierrc.js",
     "./tsconfig.json": "./tsconfig.json",
