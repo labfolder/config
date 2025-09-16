@@ -1,5 +1,5 @@
 extends:
-  - '@labforward/eslint-config-base'
+  - '@labfolder/eslint-config-base'
   - 'plugin:react/recommended'
   - 'plugin:react/jsx-runtime'
   - 'plugin:react-hooks/recommended'

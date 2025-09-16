@@ -1,21 +1,19 @@
 version: 2.1
-
 aliases:
   when_release: &when_release
     condition:
-      matches: { pattern: /^release\/.*$/, value: << pipeline.git.branch >> }
+      matches: {pattern: /^release\/.*$/, value: << pipeline.git.branch >>}
   node_env: &node_env
     docker:
       - image: cimg/node:lts
     working_directory: ~/repo
-
 commands:
   npm_login:
     steps:
       - run:
           name: Authenticate NPM
           command: |
-            npm set "@labforward:registry" "https://registry.npmjs.org/"
+            npm set "@labfolder:registry" "https://registry.npmjs.org/"
             npm set "//registry.npmjs.org/:_authToken" "${NPM_TOKEN_WRITE}"
   yarn_cache_install:
     steps:

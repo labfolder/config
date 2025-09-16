@@ -1,1 +1,1 @@
-# @labforward/config
+# @labfolder/config

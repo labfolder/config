@@ -1,5 +1,5 @@
 {
-  "name": "@labforward/workspace",
+  "name": "@labfolder/workspace",
   "version": "0.1.8",
   "private": true,
   "description": "",
@@ -19,8 +19,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.28.3",
-    "@labforward/config": "~0.1.8",
-    "@labforward/eslint-config-node": "~0.1.8",
+    "@labfolder/config": "https://gitpkg.vercel.app/labfolder/config/packages/config?v0.1.8",
+    "@labfolder/eslint-config-node": "https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-node?v0.1.8",
     "eslint": "^8.57.1",
     "execa": "^9.6.0",
     "fs-extra": "^11.3.1",

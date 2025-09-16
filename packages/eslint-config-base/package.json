@@ -1,5 +1,5 @@
 {
-  "name": "@labforward/eslint-config-base",
+  "name": "@labfolder/eslint-config-base",
   "version": "0.1.8",
   "description": "",
   "keywords": [],
@@ -13,7 +13,7 @@
   "main": "./eslint/index.js",
   "dependencies": {
     "@babel/eslint-parser": "^7.28.0",
-    "@labforward/config": "~0.1.8",
+    "@labfolder/config": "https://gitpkg.vercel.app/labfolder/config/packages/config?v0.1.8",
     "@typescript-eslint/eslint-plugin": "^8.42.0",
     "@typescript-eslint/parser": "^8.42.0",
     "eslint": "^8.57.1",
