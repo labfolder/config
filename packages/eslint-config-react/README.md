@@ -1,1 +1,1 @@
-# @labforward/eslint-config-react
+# @labfolder/eslint-config-react

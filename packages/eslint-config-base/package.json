@@ -1,21 +1,21 @@
 {
-  "name": "@labforward/eslint-config-base",
-  "version": "0.1.8",
+  "name": "@labfolder/eslint-config-base",
+  "version": "0.1.9",
   "description": "",
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/labforward/config.git",
+    "url": "https://github.com/labfolder/config.git",
     "directory": "packages/eslint-config-base"
   },
   "license": "Apache-2.0",
-  "author": "labforward GmbH",
+  "author": "labfolder GmbH",
   "main": "./eslint/index.js",
   "dependencies": {
     "@babel/eslint-parser": "^7.28.0",
-    "@labforward/config": "~0.1.8",
-    "@typescript-eslint/eslint-plugin": "^8.41.0",
-    "@typescript-eslint/parser": "^8.41.0",
+    "@labfolder/config": "https://gitpkg.vercel.app/labfolder/config/packages/config?v0.1.9",
+    "@typescript-eslint/eslint-plugin": "^8.42.0",
+    "@typescript-eslint/parser": "^8.42.0",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^10.1.8",
     "eslint-import-resolver-typescript": "^4.4.4",

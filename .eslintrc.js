@@ -1,5 +1,5 @@
 module.exports = {
-  extends: '@labforward/eslint-config-node',
+  extends: '@labfolder/eslint-config-node',
   parserOptions: {
     requireConfigFile: false,
   },

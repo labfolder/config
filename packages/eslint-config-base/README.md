@@ -1,1 +1,1 @@
-# @labforward/eslint-config-base
+# @labfolder/eslint-config-base

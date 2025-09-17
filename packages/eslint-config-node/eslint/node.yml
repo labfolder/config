@@ -1,5 +1,5 @@
 extends:
-  - '@labforward/eslint-config-base'
+  - '@labfolder/eslint-config-base'
 parserOptions:
   sourceType: 'module'
 env:

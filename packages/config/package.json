@@ -1,19 +1,16 @@
 {
-  "name": "@labforward/config",
-  "version": "0.1.8",
+  "name": "@labfolder/config",
+  "version": "0.1.9",
   "description": "",
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/labforward/config.git",
+    "url": "https://github.com/labfolder/config.git",
     "directory": "packages/config"
   },
   "license": "Apache-2.0",
-  "author": "labforward GmbH",
+  "author": "labfolder GmbH",
   "exports": {
-    "./drivers/*": "./drivers/*.js",
-    "./drivers/tsconfig.json": "./drivers/tsconfig.json",
-    "./drivers/tsconfig": "./drivers/tsconfig.json",
     "./import-sort": "./import-sort.js",
     "./prettier": "./.prettierrc.js",
     "./tsconfig.json": "./tsconfig.json",
