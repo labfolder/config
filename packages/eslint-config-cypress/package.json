@@ -13,8 +13,8 @@
   "main": "./eslint/index.js",
   "dependencies": {
     "@labfolder/eslint-config-base": "https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-base?v0.1.9",
-    "eslint-plugin-cypress": "^5.1.1",
-    "eslint-plugin-mocha": "^11.1.0"
+    "eslint-plugin-cypress": "^3",
+    "eslint-plugin-mocha": "^10"
   },
   "publishConfig": {
     "access": "public"

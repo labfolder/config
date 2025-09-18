@@ -222,7 +222,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint-community/eslint-utils@npm:^4.2.0, @eslint-community/eslint-utils@npm:^4.4.1, @eslint-community/eslint-utils@npm:^4.7.0":
+"@eslint-community/eslint-utils@npm:^4.2.0, @eslint-community/eslint-utils@npm:^4.7.0":
   version: 4.9.0
   resolution: "@eslint-community/eslint-utils@npm:4.9.0"
   dependencies:
@@ -398,8 +398,8 @@ __metadata:
   resolution: "@labfolder/eslint-config-cypress@workspace:packages/eslint-config-cypress"
   dependencies:
     "@labfolder/eslint-config-base": "https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-base?v0.1.9"
-    eslint-plugin-cypress: "npm:^5.1.1"
-    eslint-plugin-mocha: "npm:^11.1.0"
+    eslint-plugin-cypress: "npm:^3"
+    eslint-plugin-mocha: "npm:^10"
   languageName: unknown
   linkType: soft
 
@@ -1528,14 +1528,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-cypress@npm:^5.1.1":
-  version: 5.1.1
-  resolution: "eslint-plugin-cypress@npm:5.1.1"
+"eslint-plugin-cypress@npm:^3":
+  version: 3.6.0
+  resolution: "eslint-plugin-cypress@npm:3.6.0"
   dependencies:
-    globals: "npm:^16.2.0"
+    globals: "npm:^13.20.0"
   peerDependencies:
-    eslint: ">=9"
-  checksum: 10c0/63f196b23c8fc70da79e966b3db6f1dd04a558ad3e04e85b004af3169c27d4b0702d8f0a9f476093cbf3fe5262f2fb1324f8d978b223db5d039e449f7da27178
+    eslint: ">=7"
+  checksum: 10c0/8e04baccbfdd6e255aa51ec5ecca29638387ec14833b33398009015bd220d5742c6cc3fea888f957832b00afd21dff1ef5d76ed5b3b69117e48acd45db8f8f1e
   languageName: node
   linkType: hard
 
@@ -1580,15 +1580,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-mocha@npm:^11.1.0":
-  version: 11.1.0
-  resolution: "eslint-plugin-mocha@npm:11.1.0"
+"eslint-plugin-mocha@npm:^10":
+  version: 10.5.0
+  resolution: "eslint-plugin-mocha@npm:10.5.0"
   dependencies:
-    "@eslint-community/eslint-utils": "npm:^4.4.1"
-    globals: "npm:^15.14.0"
+    eslint-utils: "npm:^3.0.0"
+    globals: "npm:^13.24.0"
+    rambda: "npm:^7.4.0"
   peerDependencies:
-    eslint: ">=9.0.0"
-  checksum: 10c0/e71fbb8782aa921274783573f1fd7c51c5f7ec465a6467642a144a728b7b53328bd77217a6ef63117fd3abf30cad052ecdac874e348d7d0f06879baf9c7c5c99
+    eslint: ">=7.0.0"
+  checksum: 10c0/49b5d3a9df038048bd4483f4d4c3b9581eec74309e197abf202376fe3d3a07812dd753a917c83fa89028f89d74be321303dc4917387e9a67450649f0e3a1ffe9
   languageName: node
   linkType: hard
 
@@ -1680,7 +1681,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-visitor-keys@npm:^2.1.0":
+"eslint-utils@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "eslint-utils@npm:3.0.0"
+  dependencies:
+    eslint-visitor-keys: "npm:^2.0.0"
+  peerDependencies:
+    eslint: ">=5"
+  checksum: 10c0/45aa2b63667a8d9b474c98c28af908d0a592bed1a4568f3145cd49fb5d9510f545327ec95561625290313fe126e6d7bdfe3fdbdb6f432689fab6b9497d3bfb52
+  languageName: node
+  linkType: hard
+
+"eslint-visitor-keys@npm:^2.0.0, eslint-visitor-keys@npm:^2.1.0":
   version: 2.1.0
   resolution: "eslint-visitor-keys@npm:2.1.0"
   checksum: 10c0/9f0e3a2db751d84067d15977ac4b4472efd6b303e369e6ff241a99feac04da758f46d5add022c33d06b53596038dbae4b4aceb27c7e68b8dfc1055b35e495787
@@ -2095,26 +2107,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globals@npm:^13.19.0":
+"globals@npm:^13.19.0, globals@npm:^13.20.0, globals@npm:^13.24.0":
   version: 13.24.0
   resolution: "globals@npm:13.24.0"
   dependencies:
     type-fest: "npm:^0.20.2"
   checksum: 10c0/d3c11aeea898eb83d5ec7a99508600fbe8f83d2cf00cbb77f873dbf2bcb39428eff1b538e4915c993d8a3b3473fa71eeebfe22c9bb3a3003d1e26b1f2c8a42cd
-  languageName: node
-  linkType: hard
-
-"globals@npm:^15.14.0":
-  version: 15.15.0
-  resolution: "globals@npm:15.15.0"
-  checksum: 10c0/f9ae80996392ca71316495a39bec88ac43ae3525a438b5626cd9d5ce9d5500d0a98a266409605f8cd7241c7acf57c354a48111ea02a767ba4f374b806d6861fe
-  languageName: node
-  linkType: hard
-
-"globals@npm:^16.2.0":
-  version: 16.4.0
-  resolution: "globals@npm:16.4.0"
-  checksum: 10c0/a14b447a78b664b42f6d324e8675fcae6fe5e57924fecc1f6328dce08af9b2ca3a3138501e1b1f244a49814a732dc60cfc1aa24e714e0b64ac8bd18910bfac90
   languageName: node
   linkType: hard
 
@@ -3091,6 +3089,13 @@ __metadata:
   version: 1.2.3
   resolution: "queue-microtask@npm:1.2.3"
   checksum: 10c0/900a93d3cdae3acd7d16f642c29a642aea32c2026446151f0778c62ac089d4b8e6c986811076e1ae180a694cedf077d453a11b58ff0a865629a4f82ab558e102
+  languageName: node
+  linkType: hard
+
+"rambda@npm:^7.4.0":
+  version: 7.5.0
+  resolution: "rambda@npm:7.5.0"
+  checksum: 10c0/7285b60cfc0737394dda6d467ef65a97221f9e208041d212378d78264d17acd372e09070f570af821314a9243b4edf465cbb5e15297ad44e484eac10535b8920
   languageName: node
   linkType: hard
 
