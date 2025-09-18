@@ -23,7 +23,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.26.9, @babel/core@npm:^7.28.3":
+"@babel/core@npm:^7.28.3":
   version: 7.28.4
   resolution: "@babel/core@npm:7.28.4"
   dependencies:
@@ -46,7 +46,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/eslint-parser@npm:^7.26.8, @babel/eslint-parser@npm:^7.28.0":
+"@babel/eslint-parser@npm:^7.28.0":
   version: 7.28.4
   resolution: "@babel/eslint-parser@npm:7.28.4"
   dependencies:
@@ -333,15 +333,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@labfolder/config@https://gitpkg.vercel.app/labfolder/config/packages/config?v0.1.8":
-  version: 0.1.8
-  resolution: "@labfolder/config@https://gitpkg.vercel.app/labfolder/config/packages/config?v0.1.8"
+"@labfolder/config@https://gitpkg.vercel.app/labfolder/config/packages/config?v0.1.9":
+  version: 0.1.9
+  resolution: "@labfolder/config@https://gitpkg.vercel.app/labfolder/config/packages/config?v0.1.9"
   dependencies:
-    "@babel/core": "npm:^7.26.9"
-    prettier: "npm:^3.5.3"
-    sort-package-json: "npm:^3.0.0"
-    typescript: "npm:^5.8.2"
-  checksum: 10c0/1d8bd12f34676507239c6817b7527f5accf980137f24e64349e67658c4d4e44926510a0bbe404080354fd365fab02fda3516840d1735bef7db1a08bccb101872
+    "@babel/core": "npm:^7.28.3"
+    prettier: "npm:^3.6.2"
+    sort-package-json: "npm:^3.4.0"
+    typescript: "npm:^5.9.2"
+  checksum: 10c0/51c40f0fb9d6b74f359fb60f7f4a76ac1a3abd320ecda162589265eb2aac34da5ef956875f225023dec6e892e2a9b35e0f68c4b1b88e78060a8fefc96b458e6e
   languageName: node
   linkType: hard
 
@@ -356,22 +356,22 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@labfolder/eslint-config-base@https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-base?v0.1.8":
-  version: 0.1.8
-  resolution: "@labfolder/eslint-config-base@https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-base?v0.1.8"
+"@labfolder/eslint-config-base@https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-base?v0.1.9":
+  version: 0.1.9
+  resolution: "@labfolder/eslint-config-base@https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-base?v0.1.9"
   dependencies:
-    "@babel/eslint-parser": "npm:^7.26.8"
-    "@labforward/config": "npm:~0.1.8"
-    "@typescript-eslint/eslint-plugin": "npm:^8.26.0"
-    "@typescript-eslint/parser": "npm:^8.26.0"
+    "@babel/eslint-parser": "npm:^7.28.0"
+    "@labfolder/config": "https://gitpkg.vercel.app/labfolder/config/packages/config?v0.1.9"
+    "@typescript-eslint/eslint-plugin": "npm:^8.42.0"
+    "@typescript-eslint/parser": "npm:^8.42.0"
     eslint: "npm:^8.57.1"
-    eslint-config-prettier: "npm:^10.0.2"
-    eslint-import-resolver-typescript: "npm:^3.8.3"
+    eslint-config-prettier: "npm:^10.1.8"
+    eslint-import-resolver-typescript: "npm:^4.4.4"
     eslint-plugin-eslint-comments: "npm:^3.2.0"
-    eslint-plugin-import: "npm:^2.31.0"
-    eslint-plugin-prettier: "npm:^5.2.3"
+    eslint-plugin-import: "npm:^2.32.0"
+    eslint-plugin-prettier: "npm:^5.5.4"
     eslint-plugin-sort-destructure-keys: "npm:^2.0.0"
-  checksum: 10c0/78985c5fc1e88a5071b2c0ae8c473952f20211127ac3110a808382f9564635993dd1b0ae0c7ffda7a77fdbf3db5403d0abd1ec26cc4df486e9e1b34fd83d14b0
+  checksum: 10c0/c2bacadc5f5a5dd6d91ad01c714a132a3bef64d53b2eb2c01a0d7f153738d4605b08a0e4aad20e954e46bc5b196f0c0d2e75d024251c6ad96e1d43ee929118a5
   languageName: node
   linkType: hard
 
@@ -380,7 +380,7 @@ __metadata:
   resolution: "@labfolder/eslint-config-base@workspace:packages/eslint-config-base"
   dependencies:
     "@babel/eslint-parser": "npm:^7.28.0"
-    "@labfolder/config": "https://gitpkg.vercel.app/labfolder/config/packages/config?v0.1.8"
+    "@labfolder/config": "https://gitpkg.vercel.app/labfolder/config/packages/config?v0.1.9"
     "@typescript-eslint/eslint-plugin": "npm:^8.42.0"
     "@typescript-eslint/parser": "npm:^8.42.0"
     eslint: "npm:^8.57.1"
@@ -397,19 +397,19 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@labfolder/eslint-config-cypress@workspace:packages/eslint-config-cypress"
   dependencies:
-    "@labfolder/eslint-config-base": "https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-base?v0.1.8"
+    "@labfolder/eslint-config-base": "https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-base?v0.1.9"
     eslint-plugin-cypress: "npm:^5.1.1"
     eslint-plugin-mocha: "npm:^11.1.0"
   languageName: unknown
   linkType: soft
 
-"@labfolder/eslint-config-node@https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-node?v0.1.8":
-  version: 0.1.8
-  resolution: "@labfolder/eslint-config-node@https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-node?v0.1.8"
+"@labfolder/eslint-config-node@https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-node?v0.1.9":
+  version: 0.1.9
+  resolution: "@labfolder/eslint-config-node@https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-node?v0.1.9"
   dependencies:
-    "@labforward/eslint-config-base": "npm:~0.1.8"
+    "@labfolder/eslint-config-base": "https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-base?v0.1.9"
     "@types/node": "npm:*"
-  checksum: 10c0/50d0e2eee2f39aaea255f6c98c5a18595f2a495129a8551a0be5a5180a1c00113372868fc3c6c71c3dc8a7376b6f43f5752421dea0d1153affcc4637d875e584
+  checksum: 10c0/d0aafb0b8f763e9ca07a7d2ff557c8ab1302e1402e6642ddf56e23cc9a7957ca3f9cb52de7f90d45242c4d0e3d5e4de449e6dfa5f7b796cebcb7733b83668964
   languageName: node
   linkType: hard
 
@@ -417,7 +417,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@labfolder/eslint-config-node@workspace:packages/eslint-config-node"
   dependencies:
-    "@labfolder/eslint-config-base": "https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-base?v0.1.8"
+    "@labfolder/eslint-config-base": "https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-base?v0.1.9"
     "@types/node": "npm:*"
   languageName: unknown
   linkType: soft
@@ -426,7 +426,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@labfolder/eslint-config-react@workspace:packages/eslint-config-react"
   dependencies:
-    "@labfolder/eslint-config-base": "https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-base?v0.1.8"
+    "@labfolder/eslint-config-base": "https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-base?v0.1.9"
     eslint-plugin-react: "npm:^7.37.5"
     eslint-plugin-react-hooks: "npm:^5.2.0"
   languageName: unknown
@@ -437,8 +437,8 @@ __metadata:
   resolution: "@labfolder/workspace@workspace:."
   dependencies:
     "@babel/core": "npm:^7.28.3"
-    "@labfolder/config": "https://gitpkg.vercel.app/labfolder/config/packages/config?v0.1.8"
-    "@labfolder/eslint-config-node": "https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-node?v0.1.8"
+    "@labfolder/config": "https://gitpkg.vercel.app/labfolder/config/packages/config?v0.1.9"
+    "@labfolder/eslint-config-node": "https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-node?v0.1.9"
     eslint: "npm:^8.57.1"
     execa: "npm:^9.6.0"
     fs-extra: "npm:^11.3.1"
@@ -448,37 +448,6 @@ __metadata:
     typescript: "npm:^5.9.2"
   languageName: unknown
   linkType: soft
-
-"@labforward/config@npm:~0.1.8":
-  version: 0.1.8
-  resolution: "@labforward/config@npm:0.1.8"
-  dependencies:
-    "@babel/core": "npm:^7.26.9"
-    prettier: "npm:^3.5.3"
-    sort-package-json: "npm:^3.0.0"
-    typescript: "npm:^5.8.2"
-  checksum: 10c0/825df06ae9410387c5b09a176c43489d1935c71d21c68366bb9449169416cf7772b884ea98814b7ff9f5372e57fa1a435e9ab29290095830631661264d9558ae
-  languageName: node
-  linkType: hard
-
-"@labforward/eslint-config-base@npm:~0.1.8":
-  version: 0.1.8
-  resolution: "@labforward/eslint-config-base@npm:0.1.8"
-  dependencies:
-    "@babel/eslint-parser": "npm:^7.26.8"
-    "@labforward/config": "npm:~0.1.8"
-    "@typescript-eslint/eslint-plugin": "npm:^8.26.0"
-    "@typescript-eslint/parser": "npm:^8.26.0"
-    eslint: "npm:^8.57.1"
-    eslint-config-prettier: "npm:^10.0.2"
-    eslint-import-resolver-typescript: "npm:^3.8.3"
-    eslint-plugin-eslint-comments: "npm:^3.2.0"
-    eslint-plugin-import: "npm:^2.31.0"
-    eslint-plugin-prettier: "npm:^5.2.3"
-    eslint-plugin-sort-destructure-keys: "npm:^2.0.0"
-  checksum: 10c0/91133a2bcffbf33e85a58448c685e6ce4e7c09f03ecc38818bf31bba1df708f07a585c09333efa75279489df3dbac91734fdb1f5c6c751e5b83f6608ed2dd7bf
-  languageName: node
-  linkType: hard
 
 "@napi-rs/wasm-runtime@npm:^0.2.11":
   version: 0.2.12
@@ -524,13 +493,6 @@ __metadata:
     "@nodelib/fs.scandir": "npm:2.1.5"
     fastq: "npm:^1.6.0"
   checksum: 10c0/db9de047c3bb9b51f9335a7bb46f4fcfb6829fb628318c12115fbaf7d369bfce71c15b103d1fc3b464812d936220ee9bc1c8f762d032c9f6be9acc99249095b1
-  languageName: node
-  linkType: hard
-
-"@nolyfill/is-core-module@npm:1.0.39":
-  version: 1.0.39
-  resolution: "@nolyfill/is-core-module@npm:1.0.39"
-  checksum: 10c0/34ab85fdc2e0250879518841f74a30c276bca4f6c3e13526d2d1fe515e1adf6d46c25fcd5989d22ea056d76f7c39210945180b4859fc83b050e2da411aa86289
   languageName: node
   linkType: hard
 
@@ -587,7 +549,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^8.26.0, @typescript-eslint/eslint-plugin@npm:^8.42.0":
+"@typescript-eslint/eslint-plugin@npm:^8.42.0":
   version: 8.44.0
   resolution: "@typescript-eslint/eslint-plugin@npm:8.44.0"
   dependencies:
@@ -608,7 +570,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^8.26.0, @typescript-eslint/parser@npm:^8.42.0":
+"@typescript-eslint/parser@npm:^8.42.0":
   version: 8.44.0
   resolution: "@typescript-eslint/parser@npm:8.44.0"
   dependencies:
@@ -1240,7 +1202,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:^4.1.0, debug@npm:^4.3.1, debug@npm:^4.3.2, debug@npm:^4.3.4, debug@npm:^4.4.0, debug@npm:^4.4.1":
+"debug@npm:^4.1.0, debug@npm:^4.3.1, debug@npm:^4.3.2, debug@npm:^4.3.4, debug@npm:^4.4.1":
   version: 4.4.3
   resolution: "debug@npm:4.4.3"
   dependencies:
@@ -1493,7 +1455,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^10.0.2, eslint-config-prettier@npm:^10.1.8":
+"eslint-config-prettier@npm:^10.1.8":
   version: 10.1.8
   resolution: "eslint-config-prettier@npm:10.1.8"
   peerDependencies:
@@ -1527,30 +1489,6 @@ __metadata:
     is-core-module: "npm:^2.13.0"
     resolve: "npm:^1.22.4"
   checksum: 10c0/0ea8a24a72328a51fd95aa8f660dcca74c1429806737cf10261ab90cfcaaf62fd1eff664b76a44270868e0a932711a81b250053942595bcd00a93b1c1575dd61
-  languageName: node
-  linkType: hard
-
-"eslint-import-resolver-typescript@npm:^3.8.3":
-  version: 3.10.1
-  resolution: "eslint-import-resolver-typescript@npm:3.10.1"
-  dependencies:
-    "@nolyfill/is-core-module": "npm:1.0.39"
-    debug: "npm:^4.4.0"
-    get-tsconfig: "npm:^4.10.0"
-    is-bun-module: "npm:^2.0.0"
-    stable-hash: "npm:^0.0.5"
-    tinyglobby: "npm:^0.2.13"
-    unrs-resolver: "npm:^1.6.2"
-  peerDependencies:
-    eslint: "*"
-    eslint-plugin-import: "*"
-    eslint-plugin-import-x: "*"
-  peerDependenciesMeta:
-    eslint-plugin-import:
-      optional: true
-    eslint-plugin-import-x:
-      optional: true
-  checksum: 10c0/02ba72cf757753ab9250806c066d09082e00807b7b6525d7687e1c0710bc3f6947e39120227fe1f93dabea3510776d86fb3fd769466ba3c46ce67e9f874cb702
   languageName: node
   linkType: hard
 
@@ -1613,7 +1551,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import@npm:^2.31.0, eslint-plugin-import@npm:^2.32.0":
+"eslint-plugin-import@npm:^2.32.0":
   version: 2.32.0
   resolution: "eslint-plugin-import@npm:2.32.0"
   dependencies:
@@ -1654,7 +1592,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-prettier@npm:^5.2.3, eslint-plugin-prettier@npm:^5.5.4":
+"eslint-plugin-prettier@npm:^5.5.4":
   version: 5.5.4
   resolution: "eslint-plugin-prettier@npm:5.5.4"
   dependencies:
@@ -2109,7 +2047,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"get-tsconfig@npm:^4.10.0, get-tsconfig@npm:^4.10.1":
+"get-tsconfig@npm:^4.10.1":
   version: 4.10.1
   resolution: "get-tsconfig@npm:4.10.1"
   dependencies:
@@ -3113,7 +3051,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^3.5.3, prettier@npm:^3.6.2":
+"prettier@npm:^3.6.2":
   version: 3.6.2
   resolution: "prettier@npm:3.6.2"
   bin:
@@ -3453,7 +3391,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sort-package-json@npm:^3.0.0, sort-package-json@npm:^3.4.0":
+"sort-package-json@npm:^3.4.0":
   version: 3.4.0
   resolution: "sort-package-json@npm:3.4.0"
   dependencies:
@@ -3474,13 +3412,6 @@ __metadata:
   version: 0.2.0
   resolution: "stable-hash-x@npm:0.2.0"
   checksum: 10c0/c757df58366ee4bb266a9486b8932eab7c1ba730469eaf4b68d2dee404814e9f84089c44c9b5205f8c7d99a0ab036cce2af69139ce5ed44b635923c011a8aea8
-  languageName: node
-  linkType: hard
-
-"stable-hash@npm:^0.0.5":
-  version: 0.0.5
-  resolution: "stable-hash@npm:0.0.5"
-  checksum: 10c0/ca670cb6d172f1c834950e4ec661e2055885df32fee3ebf3647c5df94993b7c2666a5dbc1c9a62ee11fc5c24928579ec5e81bb5ad31971d355d5a341aab493b3
   languageName: node
   linkType: hard
 
@@ -3625,7 +3556,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tinyglobby@npm:^0.2.12, tinyglobby@npm:^0.2.13, tinyglobby@npm:^0.2.14":
+"tinyglobby@npm:^0.2.12, tinyglobby@npm:^0.2.14":
   version: 0.2.15
   resolution: "tinyglobby@npm:0.2.15"
   dependencies:
@@ -3741,7 +3672,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^5.8.2, typescript@npm:^5.9.2":
+"typescript@npm:^5.9.2":
   version: 5.9.2
   resolution: "typescript@npm:5.9.2"
   bin:
@@ -3751,7 +3682,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^5.8.2#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^5.9.2#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A^5.9.2#optional!builtin<compat/typescript>":
   version: 5.9.2
   resolution: "typescript@patch:typescript@npm%3A5.9.2#optional!builtin<compat/typescript>::version=5.9.2&hash=5786d5"
   bin:
@@ -3794,7 +3725,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unrs-resolver@npm:^1.6.2, unrs-resolver@npm:^1.7.11":
+"unrs-resolver@npm:^1.7.11":
   version: 1.11.1
   resolution: "unrs-resolver@npm:1.11.1"
   dependencies:
