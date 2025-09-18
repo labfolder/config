@@ -1,6 +1,6 @@
 {
   "name": "@labfolder/eslint-config-node",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "",
   "keywords": [],
   "repository": {
@@ -12,7 +12,7 @@
   "author": "labfolder GmbH",
   "main": "./eslint/index.js",
   "dependencies": {
-    "@labfolder/eslint-config-base": "https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-base?v0.1.9",
+    "@labfolder/eslint-config-base": "https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-base?c9070d90b0d84c5bf1efd0db7f383b98c42dced1",
     "@types/node": "*"
   },
   "publishConfig": {

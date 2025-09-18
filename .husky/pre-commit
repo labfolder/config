@@ -1,4 +1,0 @@
-if [ -n "$(git diff --name-only --staged | grep 'yarn.lock')" ]; then
-  yarn dedupe
-  git add -u
-fi

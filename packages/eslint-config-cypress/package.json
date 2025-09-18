@@ -1,6 +1,6 @@
 {
   "name": "@labfolder/eslint-config-cypress",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "",
   "keywords": [],
   "repository": {
@@ -12,9 +12,10 @@
   "author": "labfolder GmbH",
   "main": "./eslint/index.js",
   "dependencies": {
-    "@labfolder/eslint-config-base": "https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-base?v0.1.9",
-    "eslint-plugin-cypress": "^5.1.1",
-    "eslint-plugin-mocha": "^11.1.0"
+    "@labfolder/eslint-config-base": "https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-base?c9070d90b0d84c5bf1efd0db7f383b98c42dced1",
+    "eslint": "^8.57.1",
+    "eslint-plugin-cypress": "^3",
+    "eslint-plugin-mocha": "^10"
   },
   "publishConfig": {
     "access": "public"
