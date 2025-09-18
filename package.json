@@ -13,14 +13,13 @@
     "bump:apply": "yarn version check && yarn version apply --all",
     "lint": "eslint . .circleci",
     "lint:fix": "eslint . .circleci --fix",
-    "postinstall": "husky",
     "sort": "sort-package-json ./package.json packages/*/package.json",
     "yolo": "node .circleci/publish.mjs"
   },
   "devDependencies": {
     "@babel/core": "^7.28.3",
-    "@labfolder/config": "https://gitpkg.vercel.app/labfolder/config/packages/config?v0.1.9",
-    "@labfolder/eslint-config-node": "https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-node?v0.1.9",
+    "@labfolder/config": "workspace:packages/config",
+    "@labfolder/eslint-config-node": "workspace:packages/eslint-config-node",
     "eslint": "^8.57.1",
     "execa": "^9.6.0",
     "fs-extra": "^11.3.1",

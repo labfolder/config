@@ -14,7 +14,7 @@
   "dependencies": {
     "@babel/core": "^7.28.3",
     "@babel/eslint-parser": "^7.28.0",
-    "@labfolder/config": "https://gitpkg.vercel.app/labfolder/config/packages/config?c9070d90b0d84c5bf1efd0db7f383b98c42dced1",
+    "@labfolder/config": "workspace:packages/config",
     "@typescript-eslint/eslint-plugin": "^8.42.0",
     "@typescript-eslint/parser": "^8.42.0",
     "eslint": "^8.57.1",

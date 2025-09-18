@@ -12,7 +12,7 @@
   "author": "labfolder GmbH",
   "main": "./eslint/index.js",
   "dependencies": {
-    "@labfolder/eslint-config-base": "https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-base?c9070d90b0d84c5bf1efd0db7f383b98c42dced1",
+    "@labfolder/eslint-config-base": "workspace:packages/eslint-config-base",
     "eslint": "^8.57.1",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0"
