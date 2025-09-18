@@ -345,6 +345,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@labfolder/config@https://gitpkg.vercel.app/labfolder/config/packages/config?c9070d90b0d84c5bf1efd0db7f383b98c42dced1":
+  version: 0.1.10
+  resolution: "@labfolder/config@https://gitpkg.vercel.app/labfolder/config/packages/config?c9070d90b0d84c5bf1efd0db7f383b98c42dced1"
+  dependencies:
+    "@babel/core": "npm:^7.28.3"
+    prettier: "npm:^3.6.2"
+    sort-package-json: "npm:^3.4.0"
+    typescript: "npm:^5.9.2"
+  checksum: 10c0/1635106b8822d54a8cefe74c5922b5b3dc52af538e55b8c2a07197a745ccfbc81eb939ef2a155a671aeb59349b526b56260e0c151f17beaec595b29e3db2b642
+  languageName: node
+  linkType: hard
+
 "@labfolder/config@https://gitpkg.vercel.app/labfolder/config/packages/config?v0.1.9":
   version: 0.1.9
   resolution: "@labfolder/config@https://gitpkg.vercel.app/labfolder/config/packages/config?v0.1.9"
@@ -368,12 +380,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@labfolder/eslint-config-base@https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-base?9fe6f317207c8da657699ca5d5d93fff0d0434c9":
+"@labfolder/eslint-config-base@https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-base?c9070d90b0d84c5bf1efd0db7f383b98c42dced1":
   version: 0.1.10
-  resolution: "@labfolder/eslint-config-base@https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-base?9fe6f317207c8da657699ca5d5d93fff0d0434c9"
+  resolution: "@labfolder/eslint-config-base@https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-base?c9070d90b0d84c5bf1efd0db7f383b98c42dced1"
   dependencies:
+    "@babel/core": "npm:^7.28.3"
     "@babel/eslint-parser": "npm:^7.28.0"
-    "@labfolder/config": "https://gitpkg.vercel.app/labfolder/config/packages/config?v0.1.9"
+    "@labfolder/config": "https://gitpkg.vercel.app/labfolder/config/packages/config?9fe6f317207c8da657699ca5d5d93fff0d0434c9"
     "@typescript-eslint/eslint-plugin": "npm:^8.42.0"
     "@typescript-eslint/parser": "npm:^8.42.0"
     eslint: "npm:^8.57.1"
@@ -383,7 +396,9 @@ __metadata:
     eslint-plugin-import: "npm:^2.32.0"
     eslint-plugin-prettier: "npm:^5.5.4"
     eslint-plugin-sort-destructure-keys: "npm:^2.0.0"
-  checksum: 10c0/4b477c0743406e72100c7ad4bfdfb4eea32b85a281a61865f67a92131317f3f44e0b1611e2e470aee0b116bb73e98e91d4c9fefff2f3f7a95f2ec9da63705554
+    prettier: "npm:^3.6.2"
+    typescript: "npm:^5.9.2"
+  checksum: 10c0/306c651b65bc1470628cff09a0198195d37e8df90240a8fd952c5cd359d009efbc829c42085884aea45cfc85486a4597a159b17932c18cdb3d2591c48f290d74
   languageName: node
   linkType: hard
 
@@ -412,7 +427,7 @@ __metadata:
   dependencies:
     "@babel/core": "npm:^7.28.3"
     "@babel/eslint-parser": "npm:^7.28.0"
-    "@labfolder/config": "https://gitpkg.vercel.app/labfolder/config/packages/config?9fe6f317207c8da657699ca5d5d93fff0d0434c9"
+    "@labfolder/config": "https://gitpkg.vercel.app/labfolder/config/packages/config?c9070d90b0d84c5bf1efd0db7f383b98c42dced1"
     "@typescript-eslint/eslint-plugin": "npm:^8.42.0"
     "@typescript-eslint/parser": "npm:^8.42.0"
     eslint: "npm:^8.57.1"
@@ -431,7 +446,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@labfolder/eslint-config-cypress@workspace:packages/eslint-config-cypress"
   dependencies:
-    "@labfolder/eslint-config-base": "https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-base?9fe6f317207c8da657699ca5d5d93fff0d0434c9"
+    "@labfolder/eslint-config-base": "https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-base?c9070d90b0d84c5bf1efd0db7f383b98c42dced1"
     eslint: "npm:^8.57.1"
     eslint-plugin-cypress: "npm:^3"
     eslint-plugin-mocha: "npm:^10"
@@ -452,7 +467,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@labfolder/eslint-config-node@workspace:packages/eslint-config-node"
   dependencies:
-    "@labfolder/eslint-config-base": "https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-base?9fe6f317207c8da657699ca5d5d93fff0d0434c9"
+    "@labfolder/eslint-config-base": "https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-base?c9070d90b0d84c5bf1efd0db7f383b98c42dced1"
     "@types/node": "npm:*"
   languageName: unknown
   linkType: soft
@@ -461,7 +476,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@labfolder/eslint-config-react@workspace:packages/eslint-config-react"
   dependencies:
-    "@labfolder/eslint-config-base": "https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-base?9fe6f317207c8da657699ca5d5d93fff0d0434c9"
+    "@labfolder/eslint-config-base": "https://gitpkg.vercel.app/labfolder/config/packages/eslint-config-base?c9070d90b0d84c5bf1efd0db7f383b98c42dced1"
     eslint: "npm:^8.57.1"
     eslint-plugin-react: "npm:^7.37.5"
     eslint-plugin-react-hooks: "npm:^5.2.0"
